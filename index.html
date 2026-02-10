@@ -1,654 +1,652 @@
 <index html>
 <html lang="en">
 <head>
-    <meta charset="UTF+0">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error Lab | QuietButt™ - Fart Silencing Underwear</title>
-    <meta name="description" content="Error Lab presents QuietButt™ - Revolutionary fart silencing underwear with sound-diffusion technology and odor neutralization. Social confidence solved.">
+    <title>Error Lab | QuietButt™ - Social Confidence Through Innovation</title>
+    <meta name="description" content="QuietButt™: Revolutionary fart-silencing underwear using acoustic-diffusion technology. Eliminate social anxiety from involuntary flatulence.">
     
     <style>
+        /* Minimalist Color Palette */
         :root {
-            --errorlab-primary: #dc2626;
-            --errorlab-secondary: #7c2d12;
-            --errorlab-accent: #f97316;
-            --errorlab-dark: #1c1917;
-            --errorlab-light: #fef2f2;
-            --errorlab-card: #ffffff;
+            --black: #000000;F
+            --white: #ffffff;
+            --gray-50: #fafafa;
+            --gray-100: #f5f5f5;
+            --gray-200: #e5e5e5;
+            --gray-300: #d4d4d4;
+            --gray-400: #a3a3a3;
+            --gray-500: #737373;
+            --gray-600: #525252;
+            --gray-700: #404040;
+            --gray-800: #262626;
+            --gray-900: #171717;
         }
         
+        /* Reset & Base */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
-        body {
-            font-family: 'Courier New', monospace, -apple-system, BlinkMacSystemFont;
-            line-height: 1.6;
-            color: var(--errorlab-dark);
-            background: var(--errorlab-light);
-            background-image: 
-                radial-gradient(var(--errorlab-primary) 1px, transparent 1px),
-                radial-gradient(var(--errorlab-primary) 1px, transparent 1px);
-            background-size: 50px 50px;
-            background-position: 0 0, 25px 25px;
-            opacity: 0.95;
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
         }
         
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            color: var(--gray-800);
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Container */
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 2rem;
         }
         
-        /* Error Lab Header */
-        .errorlab-header {
-            background: var(--errorlab-dark);
-            color: white;
-            padding: 20px 0;
-            border-bottom: 3px solid var(--errorlab-primary);
-            position: relative;
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
         }
         
-        .errorlab-header::before {
-            content: 'ERROR_404:SOCIAL_EMBARRASSMENT_NOT_FOUND';
-            position: absolute;
-            top: 5px;
-            left: 20px;
-            font-size: 0.7rem;
-            color: var(--errorlab-accent);
-            opacity: 0.7;
-            font-family: monospace;
+        .h1 {
+            font-size: 4.8rem;
+            font-weight: 400;
+            letter-spacing: -0.03em;
         }
         
-        .errorlab-logo {
-            text-align: center;
-            font-family: monospace;
+        .h2 {
+            font-size: 3.6rem;
+            margin-bottom: 2rem;
         }
         
-        .errorlab-logo h1 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            letter-spacing: -1px;
-            color: var(--errorlab-primary);
-            text-shadow: 2px 2px 0px var(--errorlab-accent);
+        .h3 {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
         }
         
-        .errorlab-tagline {
-            font-size: 0.9rem;
-            color: #d6d3d1;
-            margin-top: 5px;
-            font-family: monospace;
+        .body-large {
+            font-size: 1.8rem;
+            line-height: 1.6;
+        }
+        
+        .body-small {
+            font-size: 1.4rem;
+            color: var(--gray-600);
+        }
+        
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-200);
+            z-index: 1000;
+            padding: 2rem 0;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-size: 2rem;
+            font-weight: 400;
+            text-decoration: none;
+            color: var(--black);
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: var(--gray-600);
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: color 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--black);
         }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--errorlab-dark) 0%, var(--errorlab-secondary) 100%);
-            color: white;
-            padding: 80px 0;
+            padding: 20rem 0 10rem;
             text-align: center;
-            border-bottom: 5px solid var(--errorlab-primary);
-            position: relative;
-            overflow: hidden;
+            background: var(--white);
         }
         
-        .hero::before {
-            content: 'DEBUGGING_SOCIAL_AWKWARDNESS...';
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-family: monospace;
-            color: var(--errorlab-accent);
-            opacity: 0.3;
-            font-size: 1rem;
-            transform: rotate(-5deg);
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .product-title {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 15px;
-            color: white;
-            text-shadow: 3px 3px 0px var(--errorlab-primary);
-            font-family: 'Courier New', monospace;
+        .hero-title {
+            font-size: 6.4rem;
+            font-weight: 400;
+            letter-spacing: -0.03em;
+            margin-bottom: 2rem;
+            line-height: 1.1;
         }
         
         .hero-subtitle {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            color: #e7e5e4;
-            font-family: monospace;
+            font-size: 2rem;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto 4rem;
         }
         
-        .error-message {
-            background: rgba(220, 38, 38, 0.1);
-            border: 2px dashed var(--errorlab-primary);
-            padding: 15px;
-            border-radius: 10px;
-            max-width: 700px;
-            margin: 30px auto;
-            font-family: monospace;
+        /* Product Showcase */
+        .product-showcase {
+            padding: 10rem 0;
+            background: var(--gray-50);
         }
         
-        .error-code {
-            color: var(--errorlab-accent);
-            font-weight: bold;
-        }
-        
-        /* Tech Specs Section */
-        .tech-specs {
-            background: var(--errorlab-card);
-            padding: 60px 0;
-            border-top: 3px solid var(--errorlab-secondary);
-            border-bottom: 3px solid var(--errorlab-secondary);
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 40px;
-            position: relative;
-        }
-        
-        .section-header h2 {
-            font-size: 2.5rem;
-            color: var(--errorlab-dark);
-            display: inline-block;
-            padding: 0 20px;
-            background: var(--errorlab-card);
-            position: relative;
-            z-index: 1;
-            font-family: 'Courier New', monospace;
-        }
-        
-        .section-header::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, var(--errorlab-primary), transparent);
-        }
-        
-        /* Terminal-style Cards */
-        .terminal-card {
-            background: var(--errorlab-dark);
-            color: #00ff00;
-            padding: 25px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            border: 1px solid var(--errorlab-primary);
-            font-family: monospace;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .terminal-card::before {
-            content: 'C:\ERROR_LAB\SOLUTIONS\QUIETBUTT>';
-            position: absolute;
-            top: 5px;
-            left: 10px;
-            font-size: 0.8rem;
-            color: var(--errorlab-accent);
-            opacity: 0.7;
-        }
-        
-        .terminal-title {
-            color: var(--errorlab-accent);
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        
-        .terminal-output {
-            color: #d1d5db;
-            line-height: 1.8;
-        }
-        
-        .terminal-output li {
-            margin-bottom: 8px;
-            list-style: none;
-            padding-left: 20px;
-            position: relative;
-        }
-        
-        .terminal-output li::before {
-            content: '>>';
-            position: absolute;
-            left: 0;
-            color: var(--errorlab-primary);
-        }
-        
-        /* Features Grid */
-        .features-grid {
+        .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
+            grid-template-columns: 1fr 1fr;
+            gap: 8rem;
+            align-items: center;
         }
         
-        .feature-item {
-            background: linear-gradient(145deg, #ffffff, #f5f5f5);
-            padding: 25px;
-            border-radius: 8px;
-            border: 2px solid var(--errorlab-primary);
-            box-shadow: 5px 5px 0px var(--errorlab-secondary);
-            transition: all 0.3s ease;
+        .product-info {
+            padding-right: 4rem;
         }
         
-        .feature-item:hover {
-            transform: translate(-3px, -3px);
-            box-shadow: 8px 8px 0px var(--errorlab-secondary);
+        .product-image {
+            position: relative;
+        }
+        
+        .image-placeholder {
+            background: var(--gray-100);
+            aspect-ratio: 4/5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-400);
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        /* Problem Section */
+        .problem {
+            padding: 10rem 0;
+            background: var(--white);
+        }
+        
+        .problem-header {
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+        
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .problem-card {
+            text-align: center;
+            padding: 3rem;
+        }
+        
+        .problem-number {
+            font-size: 1.2rem;
+            color: var(--gray-400);
+            margin-bottom: 1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        
+        /* Solution Section */
+        .solution {
+            padding: 10rem 0;
+            background: var(--gray-50);
+        }
+        
+        .solution-features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            margin-top: 6rem;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 2rem;
         }
         
         .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: var(--errorlab-primary);
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+            color: var(--gray-700);
         }
         
-        .feature-title {
-            color: var(--errorlab-dark);
-            margin-bottom: 10px;
-            font-size: 1.4rem;
-            font-family: 'Courier New', monospace;
+        /* Technology Section */
+        .technology {
+            padding: 10rem 0;
+            background: var(--white);
         }
         
-        /* Bug Fix Section */
-        .bug-fix {
-            background: linear-gradient(135deg, var(--errorlab-dark) 0%, var(--errorlab-secondary) 100%);
-            color: white;
-            padding: 60px 0;
-            margin: 40px 0;
-            border-top: 5px solid var(--errorlab-accent);
-            border-bottom: 5px solid var(--errorlab-accent);
+        .tech-specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            margin-top: 6rem;
         }
         
-        .bug-fix-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .bug-fix-title {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-            color: var(--errorlab-accent);
-            font-family: 'Courier New', monospace;
+        .spec-item {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--gray-200);
         }
         
         /* CTA Section */
-        .cta-section {
-            background: var(--errorlab-light);
-            padding: 60px 0;
+        .cta {
+            padding: 15rem 0;
+            background: var(--black);
+            color: var(--white);
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
         
-        .cta-section::before {
-            content: 'SOLUTION_READY';
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            font-family: monospace;
-            color: var(--errorlab-primary);
-            opacity: 0.1;
-            font-size: 3rem;
-            transform: rotate(-15deg);
+        .cta-title {
+            font-size: 4.8rem;
+            margin-bottom: 2rem;
+            color: var(--white);
         }
         
-        .cta-terminal {
-            background: var(--errorlab-dark);
-            color: #00ff00;
-            padding: 40px;
-            border-radius: 10px;
+        .cta-subtitle {
+            font-size: 2rem;
+            color: var(--gray-300);
             max-width: 600px;
-            margin: 0 auto;
-            border: 3px solid var(--errorlab-primary);
-            font-family: monospace;
-        }
-        
-        .terminal-prompt {
-            color: var(--errorlab-accent);
-            margin-bottom: 20px;
+            margin: 0 auto 4rem;
         }
         
         .cta-button {
             display: inline-block;
-            background: var(--errorlab-primary);
-            color: white;
-            padding: 18px 45px;
-            font-size: 1.2rem;
-            font-weight: bold;
+            padding: 1.6rem 3.2rem;
+            background: var(--white);
+            color: var(--black);
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            border: 3px solid var(--errorlab-dark);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: 'Courier New', monospace;
+            font-size: 1.4rem;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            border: 1px solid var(--white);
+            transition: all 0.2s ease;
         }
         
         .cta-button:hover {
-            background: var(--errorlab-accent);
-            transform: translate(-3px, -3px);
-            box-shadow: 5px 5px 0px var(--errorlab-dark);
+            background: transparent;
+            color: var(--white);
         }
         
-        /* Error Lab Footer */
-        .errorlab-footer {
-            background: var(--errorlab-dark);
-            color: #a8a29e;
-            padding: 40px 0;
-            border-top: 3px solid var(--errorlab-primary);
-            font-family: monospace;
+        /* Footer */
+        .footer {
+            padding: 8rem 0 4rem;
+            background: var(--gray-50);
+            border-top: 1px solid var(--gray-200);
         }
         
-        .footer-content {
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4rem;
+            margin-bottom: 6rem;
+        }
+        
+        .footer-column h4 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 2rem;
+            color: var(--gray-600);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links a {
+            text-decoration: none;
+            color: var(--gray-700);
+            font-size: 1.4rem;
+            transition: color 0.2s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--black);
+        }
+        
+        .footer-bottom {
             text-align: center;
-        }
-        
-        .footer-logo {
-            color: var(--errorlab-primary);
-            font-size: 2rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
-        }
-        
-        .console-output {
-            background: rgba(0,0,0,0.3);
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px auto;
-            max-width: 500px;
-            font-size: 0.9rem;
-            border: 1px solid var(--errorlab-secondary);
+            padding-top: 4rem;
+            border-top: 1px solid var(--gray-200);
+            color: var(--gray-600);
+            font-size: 1.2rem;
         }
         
         /* Responsive */
         @media (max-width: 768px) {
-            .product-title {
-                font-size: 2.5rem;
+            .h1, .hero-title {
+                font-size: 3.6rem;
             }
             
-            .hero-subtitle {
-                font-size: 1.1rem;
+            .h2 {
+                font-size: 2.8rem;
             }
             
-            .section-header h2 {
-                font-size: 2rem;
+            .product-grid {
+                grid-template-columns: 1fr;
+                gap: 4rem;
             }
             
-            .features-grid {
+            .problem-grid {
                 grid-template-columns: 1fr;
             }
             
-            .terminal-card {
-                padding: 20px 15px;
+            .solution-features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .tech-specs {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero {
+                padding: 15rem 0 6rem;
             }
         }
         
-        /* Blinking Cursor Animation */
-        .blinking-cursor {
-            animation: blink 1s infinite;
-            color: var(--errorlab-accent);
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
         }
         
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
-    <!-- Error Lab Header -->
-    <header class="errorlab-header">
-        <div class="container">
-            <div class="errorlab-logo">
-                <h1>ERROR LAB</h1>
-                <div class="errorlab-tagline">DEBUGGING LIFE'S AWKWARD BUGS SINCE 2024</div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">Error Lab</a>
+            <div class="nav-menu">
+                <a href="#problem" class="nav-link">Problem</a>
+                <a href="#solution" class="nav-link">Solution</a>
+                <a href="#technology" class="nav-link">Technology</a>
+                <a href="#purchase" class="nav-link">Purchase</a>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="product-title">QUIETBUTT<span style="color: var(--errorlab-accent)">.exe</span></h1>
-                <p class="hero-subtitle">
-                    FART_SILENCING_UNDERWEAR.EXE - EXECUTING_SOCIAL_CONFIDENCE_SINCE 2024
-                </p>
-                
-                <div class="error-message">
-                    <div class="error-code">ERROR_CODE: 0xSOCIAL_AWKWARDNESS</div>
-                    <div>PROBLEM: Uncontrolled flatulence in sensitive social contexts</div>
-                    <div>SEVERITY: HIGH (Social Confidence Critical)</div>
-                    <div>STATUS: <span style="color: var(--errorlab-accent)">SOLUTION DEPLOYED</span></div>
-                </div>
-            </div>
+            <h1 class="hero-title fade-in">QuietButt™</h1>
+            <p class="hero-subtitle fade-in">
+                Fart-silencing underwear that eliminates social anxiety through acoustic-diffusion technology. 
+                Regain confidence in any situation.
+            </p>
         </div>
     </section>
 
-    <!-- Technical Specifications -->
-    <section class="tech-specs">
+    <!-- Product Showcase -->
+    <section class="product-showcase">
         <div class="container">
-            <div class="section-header">
-                <h2>TECHNICAL SPECIFICATIONS</h2>
-            </div>
-            
-            <div class="terminal-card">
-                <div class="terminal-title">PRODUCT_ANALYSIS.EXE</div>
-                <div class="terminal-output">
-                    <li><strong>PROBLEM STATEMENT:</strong> Involuntary bodily sounds in socially sensitive situations</li>
-                    <li><strong>SYMPTOMS:</strong> Anxiety, embarrassment, loss of self-confidence</li>
-                    <li><strong>AFFECTED SYSTEMS:</strong> Meetings, classrooms, dates, public transport</li>
-                    <li><strong>ERROR_FREQUENCY:</strong> Variable (Diet/Lifestyle dependent)</li>
+            <div class="product-grid">
+                <div class="product-info">
+                    <h2 class="h2 fade-in">Social Dignity,<br>Reengineered</h2>
+                    <p class="body-large fade-in" style="margin-bottom: 3rem;">
+                        QuietButt™ reduces both sound and odor of flatulence using layered acoustic-diffusion fabric 
+                        and odor-neutralizing filters, allowing users to maintain social dignity without behavioral suppression.
+                    </p>
+                    <div class="body-small fade-in">
+                        <p>Sound diffusion technology • Odor neutralization layer</p>
+                        <p>Invisible, wearable, everyday use • No behavior change required</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="terminal-card">
-                <div class="terminal-title">SOLUTION_ARCHITECTURE.EXE</div>
-                <div class="terminal-output">
-                    <li><strong>LAYER_1:</strong> Acoustic-diffusion fabric technology</li>
-                    <li><strong>LAYER_2:</strong> Activated carbon filtration matrix</li>
-                    <li><strong>LAYER_3:</strong> Sound wave dispersion algorithm</li>
-                    <li><strong>LAYER_4:</strong> Odor neutralization protocol</li>
-                    <li><strong>COMPATIBILITY:</strong> All human anatomy versions</li>
+                <div class="product-image fade-in">
+                    <div class="image-placeholder">
+                        Product Visualization
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="container" style="padding: 60px 0;">
-        <div class="section-header">
-            <h2>SYSTEM FEATURES</h2>
-        </div>
-        
-        <div class="features-grid">
-            <div class="feature-item">
-                <div class="feature-icon">🔇</div>
-                <h3 class="feature-title">SOUND_DIFFUSION.EXE</h3>
-                <p>Advanced fabric layers disperse sound waves, reducing audible output by 90%+</p>
-            </div>
-            
-            <div class="feature-item">
-                <div class="feature-icon">🌫️</div>
-                <h3 class="feature-title">ODOR_NEUTRALIZATION.EXE</h3>
-                <p>Carbon filter matrix absorbs and neutralizes odors instantly upon detection</p>
-            </div>
-            
-            <div class="feature-item">
-                <div class="feature-icon">👁️</div>
-                <h3 class="feature-title">STEALTH_MODE.EXE</h3>
-                <p>Visual camouflage - indistinguishable from regular underwear</p>
-            </div>
-            
-            <div class="feature-item">
-                <div class="feature-icon">⚙️</div>
-                <h3 class="feature-title">ZERO_CONFIG.EXE</h3>
-                <p>No behavior modification required. Plug and play solution</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bug Fix Section -->
-    <section class="bug-fix">
+    <!-- Problem Section -->
+    <section id="problem" class="problem">
         <div class="container">
-            <div class="bug-fix-content">
-                <h2 class="bug-fix-title">BUG_FIX_CHANGELOG v1.0</h2>
-                <div style="background: rgba(0,0,0,0.3); padding: 25px; border-radius: 8px; margin-top: 25px; text-align: left; font-family: monospace;">
-                    <div style="color: var(--errorlab-accent); margin-bottom: 15px;">PATCH_NOTES:</div>
-                    <div style="margin-bottom: 10px;">✅ FIXED: Social embarrassment in meetings</div>
-                    <div style="margin-bottom: 10px;">✅ FIXED: Classroom anxiety triggers</div>
-                    <div style="margin-bottom: 10px;">✅ FIXED: Date night awkwardness</div>
-                    <div style="margin-bottom: 10px;">✅ FIXED: Public transport anxiety</div>
-                    <div style="margin-bottom: 10px;">✅ ADDED: Silent mode for all occasions</div>
-                    <div>🔄 STATUS: <span style="color: #00ff00;">ALL SYSTEMS OPERATIONAL</span></div>
+            <div class="problem-header">
+                <h2 class="h2 fade-in">The Unspoken Problem</h2>
+                <p class="body-large fade-in">Social anxiety caused by involuntary bodily sounds affects millions daily.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card fade-in">
+                    <div class="problem-number">01</div>
+                    <h3 class="h3">Public Embarrassment</h3>
+                    <p>Involuntary flatulence in meetings, classrooms, and dates causes immediate social discomfort.</p>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="problem-number">02</div>
+                    <h3 class="h3">Chronic Anxiety</h3>
+                    <p>Constant worry about potential incidents creates ongoing stress in social and professional settings.</p>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="problem-number">03</div>
+                    <h3 class="h3">Confidence Erosion</h3>
+                    <p>Repeated embarrassing situations lead to diminished self-esteem and avoidance of social interactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <h2 class="h2 fade-in" style="text-align: center;">The Engineering Solution</h2>
+            <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">
+                QuietButt™ employs multi-layer fabric technology to address both audible and olfactory concerns.
+            </p>
+            
+            <div class="solution-features">
+                <div class="feature fade-in">
+                    <div class="feature-icon">🔇</div>
+                    <h3 class="h3">Sound Diffusion</h3>
+                    <p>Acoustic-diffusion fabric disperses sound waves, reducing audible output by 90%+.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">🌫️</div>
+                    <h3 class="h3">Odor Neutralization</h3>
+                    <p>Activated carbon filters absorb and neutralize odors upon release.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">👁️</div>
+                    <h3 class="h3">Invisible Design</h3>
+                    <p>Indistinguishable from regular underwear. No one will know.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="h3">Zero Maintenance</h3>
+                    <p>Wear daily. No behavior modification or lifestyle changes required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <h2 class="h2 fade-in">Technical Specifications</h2>
+            <p class="body-large fade-in">Engineered for discretion and comfort.</p>
+            
+            <div class="tech-specs">
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Fabric Composition</h3>
+                    <p>Three-layer construction: Outer cotton blend, acoustic-diffusion middle layer, odor-neutralizing inner lining.</p>
+                </div>
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Sound Reduction</h3>
+                    <p>90%+ reduction in audible frequency range (100-500Hz). Laboratory tested and verified.</p>
+                </div>
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Odor Control</h3>
+                    <p>Activated carbon filter effective for 8-12 hours of continuous wear. Replaceable cartridge system.</p>
+                </div>
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Comfort & Fit</h3>
+                    <p>Breathable cotton exterior, seamless edges, available in sizes XS-XXL. Machine washable.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section id="purchase" class="cta">
         <div class="container">
-            <div class="cta-terminal">
-                <div class="terminal-prompt">
-                    C:\ERROR_LAB\DEPLOYMENT> deploy_quietbutt.exe
-                </div>
-                <div style="color: #d1d5db; margin-bottom: 25px; line-height: 1.8;">
-                    [✓] Social confidence module loaded<br>
-                    [✓] Sound diffusion system active<br>
-                    [✓] Odor neutralization ready<br>
-                    [✓] Stealth mode engaged<br>
-                    [✓] All systems operational
-                </div>
-                <div style="color: var(--errorlab-accent); margin-bottom: 30px;">
-                    DEPLOY_SOLUTION? [Y/N] <span class="blinking-cursor">_</span>
-                </div>
-                
-                <button class="cta-button">EXECUTE SOLUTION (€49.99)</button>
-                
-                <div style="margin-top: 25px; color: #a8a29e; font-size: 0.9rem;">
-                    [30-DAY_MONEY_BACK_GUARANTEE.exe] | [FREE_SHIPPING.dll] | [DISCREET_PACKAGING.sys]
-                </div>
-            </div>
+            <h2 class="cta-title fade-in">Reclaim Your Social Freedom</h2>
+            <p class="cta-subtitle fade-in">
+                Join thousands who have eliminated social anxiety from their daily lives. 
+                Experience confidence in every situation.
+            </p>
+            <a href="#" class="cta-button fade-in">Purchase QuietButt™ — €49.99</a>
+            <p class="body-small fade-in" style="margin-top: 2rem; color: var(--gray-400);">
+                30-day money-back guarantee • Free shipping • Discreet packaging
+            </p>
         </div>
     </section>
 
-    <!-- Error Lab Footer -->
-    <footer class="errorlab-footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">ERROR LAB</div>
-                <div class="console-output">
-                    SYSTEM: QuietButt™ v1.0<br>
-                    STATUS: Operational<br>
-                    UPTIME: 99.9% Social Confidence<br>
-                    LAST_UPDATE: Patch 1.01 deployed<br>
-                    NEXT_UPDATE: v1.1 - Enhanced stealth
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Error Lab</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Research</a></li>
+                    </ul>
                 </div>
-                
-                <div style="margin-top: 30px; font-size: 0.9rem;">
-                    <div>© 2024 ERROR LAB - DEBUGGING SOCIAL AWKWARDNESS</div>
-                    <div style="margin-top: 10px; color: #78716c;">
-                        TERMS_OF_SERVICE.sys | PRIVACY_POLICY.exe | CONTACT_DEBUG@ERRORLAB.dev
-                    </div>
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">QuietButt™</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
                 </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Error Lab. All rights reserved. QuietButt™ is a trademark of Error Lab.</p>
+                <p style="margin-top: 1rem;">Designed for social confidence. Engineered for discretion.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Terminal-like typing effects
+        // Fade-in animation on scroll
         document.addEventListener('DOMContentLoaded', function() {
-            // Add blinking cursor to prompts
-            const prompts = document.querySelectorAll('.terminal-prompt, .error-code');
-            prompts.forEach(prompt => {
-                prompt.innerHTML += ' <span class="blinking-cursor">_</span>';
-            });
+            const fadeElements = document.querySelectorAll('.fade-in');
             
-            // Console-style animations
-            const terminalCards = document.querySelectorAll('.terminal-card');
-            terminalCards.forEach((card, index) => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(20px)';
-                
-                setTimeout(() => {
-                    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                }, index * 200);
-            });
-            
-            // Feature items animation
-            const features = document.querySelectorAll('.feature-item');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.classList.add('visible');
                     }
                 });
-            }, { threshold: 0.1 });
-            
-            features.forEach(feature => {
-                feature.style.opacity = '0';
-                feature.style.transform = 'translateY(30px)';
-                feature.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(feature);
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
             });
             
-            // CTA button click effect
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Simple cart functionality (demo)
             const ctaButton = document.querySelector('.cta-button');
             if (ctaButton) {
                 ctaButton.addEventListener('click', function(e) {
                     e.preventDefault();
-                    
-                    // Terminal-style response
-                    const terminal = document.querySelector('.cta-terminal');
-                    const originalHTML = terminal.innerHTML;
-                    
-                    terminal.innerHTML = `
-                        <div style="color: var(--errorlab-accent);">C:\ERROR_LAB\DEPLOYMENT> deploy_quietbutt.exe --confirm</div>
-                        <div style="color: #00ff00; margin: 20px 0;">
-                            [✓] Payment processing...<br>
-                            [✓] Order confirmed...<br>
-                            [✓] Shipping label generated...<br>
-                            [✓] Discreet packaging prepared...<br>
-                            [✓] Social confidence upgrade queued...
-                        </div>
-                        <div style="color: var(--errorlab-accent);">
-                            DEPLOYMENT_COMPLETE! Redirecting to secure checkout...
-                        </div>
-                    `;
-                    
-                    // Reset after 3 seconds (demo only)
-                    setTimeout(() => {
-                        terminal.innerHTML = originalHTML;
-                    }, 3000);
+                    alert('Thank you for your interest in QuietButt™.\n\nIn a production environment, this would redirect to a secure checkout page.\n\n[Demo: Purchase flow would continue here]');
                 });
             }
-            
-            // Console-style bootup message
-            console.log('%c🚀 ERROR LAB INITIALIZED', 'color: #dc2626; font-size: 16px; font-weight: bold;');
-            console.log('%c🔧 QuietButt.exe loaded successfully', 'color: #f97316;');
-            console.log('%c✅ Social confidence module active', 'color: #00ff00;');
         });
     </script>
 </body>
-
 </html>
