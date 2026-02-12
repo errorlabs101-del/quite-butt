@@ -6,10 +6,19 @@
     <title>Error Lab | QuietButt™ - Social Confidence Through Innovation</title>
     <meta name="description" content="QuietButt™: Revolutionary fart-silencing underwear using acoustic-diffusion technology. Eliminate social anxiety from involuntary flatulence.">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N70V0RJGEX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-N70V0RJGEX');
+    </script>
+    
     <style>
         /* Minimalist Color Palette */
         :root {
-            --black: #000000;F
+            --black: #000000;
             --white: #ffffff;
             --gray-50: #fafafa;
             --gray-100: #f5f5f5;
@@ -21,6 +30,7 @@
             --gray-700: #404040;
             --gray-800: #262626;
             --gray-900: #171717;
+            --error-red: #dc2626;
         }
         
         /* Reset & Base */
@@ -45,13 +55,6 @@
             -moz-osx-font-smoothing: grayscale;
         }
         
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* Container */
         .container {
             width: 100%;
             max-width: 1200px;
@@ -111,10 +114,16 @@
         }
         
         .nav-logo {
-            font-size: 2rem;
-            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
             text-decoration: none;
-            color: var(--black);
+        }
+        
+        .nav-logo img {
+            height: 32px;
+            width: auto;
+            display: block;
         }
         
         .nav-menu {
@@ -156,6 +165,27 @@
             color: var(--gray-600);
             max-width: 600px;
             margin: 0 auto 4rem;
+        }
+        
+        .hero-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .hero-logo img {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+        
+        .hero-logo-text {
+            font-size: 3.6rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            color: var(--black);
         }
         
         /* Product Showcase */
@@ -265,6 +295,77 @@
             border-bottom: 1px solid var(--gray-200);
         }
         
+        /* Testimonials Section */
+        .testimonials {
+            padding: 10rem 0;
+            background: var(--gray-50);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            margin-top: 6rem;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            padding: 4rem;
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+        }
+        
+        .testimonial-text {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            color: var(--gray-700);
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--black);
+        }
+        
+        .testimonial-title {
+            font-size: 1.2rem;
+            color: var(--gray-500);
+            margin-top: 0.5rem;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 10rem 0;
+            background: var(--white);
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 6rem;
+        }
+        
+        .faq-item {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .faq-question {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: var(--black);
+        }
+        
+        .faq-answer {
+            font-size: 1.5rem;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+        
         /* CTA Section */
         .cta {
             padding: 15rem 0;
@@ -284,6 +385,28 @@
             color: var(--gray-300);
             max-width: 600px;
             margin: 0 auto 4rem;
+        }
+        
+        .cta-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .cta-logo img {
+            height: 50px;
+            width: auto;
+            display: block;
+            filter: brightness(0) invert(1);
+        }
+        
+        .cta-logo-text {
+            font-size: 3.6rem;
+            color: var(--white);
+            font-weight: 400;
+            letter-spacing: -0.02em;
         }
         
         .cta-button {
@@ -345,6 +468,25 @@
             color: var(--black);
         }
         
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-logo img {
+            height: 32px;
+            width: auto;
+            display: block;
+        }
+        
+        .footer-logo-text {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--black);
+        }
+        
         .footer-bottom {
             text-align: center;
             padding-top: 4rem;
@@ -380,6 +522,14 @@
                 grid-template-columns: 1fr;
             }
             
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            
             .footer-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -407,22 +557,30 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation with Logo -->
     <nav class="nav">
         <div class="container nav-container">
-            <a href="#" class="nav-logo">Error Lab</a>
+            <a href="#" class="nav-logo">
+                <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab">
+            </a>
             <div class="nav-menu">
                 <a href="#problem" class="nav-link">Problem</a>
                 <a href="#solution" class="nav-link">Solution</a>
                 <a href="#technology" class="nav-link">Technology</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#faq" class="nav-link">FAQ</a>
                 <a href="#purchase" class="nav-link">Purchase</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Logo -->
     <section class="hero">
         <div class="container">
+            <div class="hero-logo fade-in">
+                <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab">
+                <span class="hero-logo-text">Error Lab</span>
+            </div>
             <h1 class="hero-title fade-in">QuietButt™</h1>
             <p class="hero-subtitle fade-in">
                 Fart-silencing underwear that eliminates social anxiety through acoustic-diffusion technology. 
@@ -442,13 +600,15 @@
                         and odor-neutralizing filters, allowing users to maintain social dignity without behavioral suppression.
                     </p>
                     <div class="body-small fade-in">
-                        <p>Sound diffusion technology • Odor neutralization layer</p>
-                        <p>Invisible, wearable, everyday use • No behavior change required</p>
+                        <p style="margin-bottom: 0.5rem;">✓ Sound diffusion technology</p>
+                        <p style="margin-bottom: 0.5rem;">✓ Odor neutralization layer</p>
+                        <p style="margin-bottom: 0.5rem;">✓ Invisible, wearable, everyday use</p>
+                        <p>✓ No behavior change required</p>
                     </div>
                 </div>
                 <div class="product-image fade-in">
                     <div class="image-placeholder">
-                        Product Visualization
+                        <span style="font-size: 1.6rem; font-weight: 500; color: var(--gray-600);">QuietButt™</span>
                     </div>
                 </div>
             </div>
@@ -466,17 +626,17 @@
                 <div class="problem-card fade-in">
                     <div class="problem-number">01</div>
                     <h3 class="h3">Public Embarrassment</h3>
-                    <p>Involuntary flatulence in meetings, classrooms, and dates causes immediate social discomfort.</p>
+                    <p>Involuntary flatulence in meetings, classrooms, and dates causes immediate social discomfort and awkwardness.</p>
                 </div>
                 <div class="problem-card fade-in">
                     <div class="problem-number">02</div>
                     <h3 class="h3">Chronic Anxiety</h3>
-                    <p>Constant worry about potential incidents creates ongoing stress in social and professional settings.</p>
+                    <p>Constant worry about potential incidents creates ongoing stress and hypervigilance in social and professional settings.</p>
                 </div>
                 <div class="problem-card fade-in">
                     <div class="problem-number">03</div>
                     <h3 class="h3">Confidence Erosion</h3>
-                    <p>Repeated embarrassing situations lead to diminished self-esteem and avoidance of social interactions.</p>
+                    <p>Repeated embarrassing situations lead to diminished self-esteem, social withdrawal, and avoidance behaviors.</p>
                 </div>
             </div>
         </div>
@@ -494,22 +654,22 @@
                 <div class="feature fade-in">
                     <div class="feature-icon">🔇</div>
                     <h3 class="h3">Sound Diffusion</h3>
-                    <p>Acoustic-diffusion fabric disperses sound waves, reducing audible output by 90%+.</p>
+                    <p>Acoustic-diffusion fabric disperses sound waves, reducing audible output by 90%+ in laboratory testing.</p>
                 </div>
                 <div class="feature fade-in">
                     <div class="feature-icon">🌫️</div>
                     <h3 class="h3">Odor Neutralization</h3>
-                    <p>Activated carbon filters absorb and neutralize odors upon release.</p>
+                    <p>Activated carbon filters absorb and neutralize odors upon release. Replaceable cartridge lasts 30 days.</p>
                 </div>
                 <div class="feature fade-in">
                     <div class="feature-icon">👁️</div>
                     <h3 class="h3">Invisible Design</h3>
-                    <p>Indistinguishable from regular underwear. No one will know.</p>
+                    <p>Indistinguishable from regular underwear. No visible bulk, seams, or indicators. No one will know.</p>
                 </div>
                 <div class="feature fade-in">
                     <div class="feature-icon">⚡</div>
                     <h3 class="h3">Zero Maintenance</h3>
-                    <p>Wear daily. No behavior modification or lifestyle changes required.</p>
+                    <p>Wear daily. No behavior modification, dietary restrictions, or lifestyle changes required. Machine washable.</p>
                 </div>
             </div>
         </div>
@@ -519,24 +679,105 @@
     <section id="technology" class="technology">
         <div class="container">
             <h2 class="h2 fade-in">Technical Specifications</h2>
-            <p class="body-large fade-in">Engineered for discretion and comfort.</p>
+            <p class="body-large fade-in">Engineered for discretion, comfort, and effectiveness.</p>
             
             <div class="tech-specs">
                 <div class="spec-item fade-in">
                     <h3 class="h3">Fabric Composition</h3>
-                    <p>Three-layer construction: Outer cotton blend, acoustic-diffusion middle layer, odor-neutralizing inner lining.</p>
+                    <p>Three-layer construction: Outer cotton blend (95% cotton, 5% spandex), acoustic-diffusion polyester middle layer, odor-neutralizing activated carbon inner lining.</p>
                 </div>
                 <div class="spec-item fade-in">
                     <h3 class="h3">Sound Reduction</h3>
-                    <p>90%+ reduction in audible frequency range (100-500Hz). Laboratory tested and verified.</p>
+                    <p>90%+ reduction in audible frequency range (100-500Hz). Independently laboratory tested and verified using ISO 3744 standards.</p>
                 </div>
                 <div class="spec-item fade-in">
                     <h3 class="h3">Odor Control</h3>
-                    <p>Activated carbon filter effective for 8-12 hours of continuous wear. Replaceable cartridge system.</p>
+                    <p>Activated carbon filter effective for 8-12 hours of continuous wear. Replaceable cartridge system ($9.99/3-pack).</p>
                 </div>
                 <div class="spec-item fade-in">
                     <h3 class="h3">Comfort & Fit</h3>
-                    <p>Breathable cotton exterior, seamless edges, available in sizes XS-XXL. Machine washable.</p>
+                    <p>Breathable cotton exterior, seamless edges, moisture-wicking. Available in sizes XS-XXL. Machine wash cold, air dry.</p>
+                </div>
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Weight & Thickness</h3>
+                    <p>Adds only 2mm thickness compared to standard underwear. Total weight: 85g (size M).</p>
+                </div>
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Durability</h3>
+                    <p>Maintains 95% effectiveness after 50 washes. Replace recommended after 6 months of daily use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="h2 fade-in" style="text-align: center;">Trusted by Thousands</h2>
+            <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto;">
+                Real stories from people who reclaimed their social confidence.
+            </p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"I'm a high school teacher. Classroom presentations were a nightmare until I found QuietButt. Now I can focus on teaching, not worrying. Life-changing."</p>
+                    <p class="testimonial-author">Sarah M.</p>
+                    <p class="testimonial-title">High School Teacher</p>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"Board meetings used to trigger anxiety attacks. Three months with QuietButt and I actually look forward to client presentations. Worth every penny."</p>
+                    <p class="testimonial-author">James R.</p>
+                    <p class="testimonial-title">Marketing Director</p>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"Dating was impossible for me. First dates meant constant fear. My girlfriend of 6 months has no idea I wear them. That's the point."</p>
+                    <p class="testimonial-author">Alex T.</p>
+                    <p class="testimonial-title">Software Engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="h2 fade-in" style="text-align: center;">Frequently Asked Questions</h2>
+            <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
+                Everything you need to know about QuietButt™.
+            </p>
+            
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">How does it work?</h3>
+                    <p class="faq-answer">Three-layer technology: outer cotton for comfort, middle acoustic-diffusion layer disperses sound waves, inner activated carbon layer neutralizes odor instantly upon release.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">Is it noticeable?</h3>
+                    <p class="faq-answer">No. QuietButt™ is designed to be indistinguishable from regular underwear. Same silhouette, same comfort, zero visible indicators.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">How do I wash it?</h3>
+                    <p class="faq-answer">Machine wash cold with like colors. Air dry only. Do not bleach or iron. Effectiveness maintained for 50+ washes.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">How long do filters last?</h3>
+                    <p class="faq-answer">Each odor-neutralizing cartridge lasts approximately 30 days of daily use. Replacement 3-packs available for $9.99.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">Sizing guide?</h3>
+                    <p class="faq-answer">XS (28-30), S (32-34), M (36-38), L (40-42), XL (44-46), XXL (48-50). Fit true to size.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">Return policy?</h3>
+                    <p class="faq-answer">30-day money-back guarantee. Unused items in original packaging qualify for full refund. No questions asked.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">Shipping?</h3>
+                    <p class="faq-answer">Free standard shipping (5-7 business days) on all orders. Express shipping (2-3 days) available for $7.99.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">Is it discreet?</h3>
+                    <p class="faq-answer">Yes. Orders ship in plain, unmarked packaging with no branding or product description visible externally.</p>
                 </div>
             </div>
         </div>
@@ -545,9 +786,13 @@
     <!-- CTA Section -->
     <section id="purchase" class="cta">
         <div class="container">
+            <div class="cta-logo fade-in">
+                <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab">
+                <span class="cta-logo-text">Error Lab</span>
+            </div>
             <h2 class="cta-title fade-in">Reclaim Your Social Freedom</h2>
             <p class="cta-subtitle fade-in">
-                Join thousands who have eliminated social anxiety from their daily lives. 
+                Join 10,000+ customers who have eliminated social anxiety from their daily lives. 
                 Experience confidence in every situation.
             </p>
             <a href="#" class="cta-button fade-in">Purchase QuietButt™ — €49.99</a>
@@ -562,17 +807,22 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <h4>Error Lab</h4>
+                    <div class="footer-logo">
+                        <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab">
+                        <span class="footer-logo-text">Error Lab</span>
+                    </div>
                     <ul class="footer-links">
                         <li><a href="#">Our Mission</a></li>
                         <li><a href="#">Technology</a></li>
                         <li><a href="#">Research</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h4>Product</h4>
                     <ul class="footer-links">
                         <li><a href="#">QuietButt™</a></li>
+                        <li><a href="#">Replacement Filters</a></li>
                         <li><a href="#">How It Works</a></li>
                         <li><a href="#">FAQs</a></li>
                     </ul>
@@ -581,8 +831,9 @@
                     <h4>Support</h4>
                     <ul class="footer-links">
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Sizing Guide</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -591,12 +842,14 @@
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Accessibility</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2024 Error Lab. All rights reserved. QuietButt™ is a trademark of Error Lab.</p>
-                <p style="margin-top: 1rem;">Designed for social confidence. Engineered for discretion.</p>
+                <p style="margin-top: 1rem;">Designed for social confidence. Engineered for discretion. Made with integrity.</p>
+                <p style="margin-top: 2rem; font-size: 1rem; color: var(--gray-400);">⚠️ This is a demonstration page for educational purposes. Not a real product.</p>
             </div>
         </div>
     </footer>
@@ -638,12 +891,12 @@
                 });
             });
             
-            // Simple cart functionality (demo)
+            // Purchase button demo
             const ctaButton = document.querySelector('.cta-button');
             if (ctaButton) {
                 ctaButton.addEventListener('click', function(e) {
                     e.preventDefault();
-                    alert('Thank you for your interest in QuietButt™.\n\nIn a production environment, this would redirect to a secure checkout page.\n\n[Demo: Purchase flow would continue here]');
+                    alert('Thank you for your interest in QuietButt™.\n\nThis is a demonstration page for educational purposes.\n\nIn a production environment, this would redirect to a secure checkout.');
                 });
             }
         });
