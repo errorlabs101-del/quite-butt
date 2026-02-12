@@ -16,7 +16,6 @@
     </script>
     
     <style>
-        /* Minimalist Color Palette */
         :root {
             --black: #000000;
             --white: #ffffff;
@@ -60,7 +59,6 @@
             padding: 0 2rem;
         }
         
-        /* Typography */
         h1, h2, h3, h4, h5, h6 {
             font-weight: 400;
             line-height: 1.2;
@@ -93,7 +91,6 @@
             color: var(--gray-600);
         }
         
-        /* Navigation */
         .nav {
             position: fixed;
             top: 0;
@@ -118,7 +115,7 @@
         }
         
         .nav-logo img {
-            height: 48px;          /* 高清大图，清晰可见 */
+            height: 48px;
             width: auto;
             display: block;
         }
@@ -142,7 +139,6 @@
             color: var(--black);
         }
         
-        /* Hero Section (无Logo) */
         .hero {
             padding: 20rem 0 10rem;
             text-align: center;
@@ -164,7 +160,6 @@
             margin: 0 auto 4rem;
         }
         
-        /* Product Showcase */
         .product-showcase {
             padding: 10rem 0;
             background: var(--gray-50);
@@ -197,7 +192,6 @@
             letter-spacing: 0.1em;
         }
         
-        /* Problem Section */
         .problem {
             padding: 10rem 0;
             background: var(--white);
@@ -229,7 +223,6 @@
             text-transform: uppercase;
         }
         
-        /* Solution Section */
         .solution {
             padding: 10rem 0;
             background: var(--gray-50);
@@ -253,7 +246,6 @@
             color: var(--gray-700);
         }
         
-        /* Technology Section */
         .technology {
             padding: 10rem 0;
             background: var(--white);
@@ -271,7 +263,6 @@
             border-bottom: 1px solid var(--gray-200);
         }
         
-        /* Testimonials Section */
         .testimonials {
             padding: 10rem 0;
             background: var(--gray-50);
@@ -311,7 +302,6 @@
             margin-top: 0.5rem;
         }
         
-        /* FAQ Section */
         .faq {
             padding: 10rem 0;
             background: var(--white);
@@ -342,7 +332,6 @@
             line-height: 1.6;
         }
         
-        /* CTA Section (无Logo) */
         .cta {
             padding: 15rem 0;
             background: var(--black);
@@ -381,7 +370,6 @@
             color: var(--white);
         }
         
-        /* Footer */
         .footer {
             padding: 8rem 0 4rem;
             background: var(--gray-50);
@@ -430,7 +418,7 @@
         }
         
         .footer-logo img {
-            height: 48px;          /* 与导航栏一致，高清 */
+            height: 48px;
             width: auto;
             display: block;
         }
@@ -449,55 +437,43 @@
             font-size: 1.2rem;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             .h1, .hero-title {
                 font-size: 3.6rem;
             }
-            
             .h2 {
                 font-size: 2.8rem;
             }
-            
             .product-grid {
                 grid-template-columns: 1fr;
                 gap: 4rem;
             }
-            
             .problem-grid {
                 grid-template-columns: 1fr;
             }
-            
             .solution-features {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
             .tech-specs {
                 grid-template-columns: 1fr;
             }
-            
             .testimonial-grid {
                 grid-template-columns: 1fr;
             }
-            
             .faq-grid {
                 grid-template-columns: 1fr;
             }
-            
             .footer-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
             .nav-menu {
                 display: none;
             }
-            
             .hero {
                 padding: 15rem 0 6rem;
             }
         }
         
-        /* Animations */
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -511,11 +487,11 @@
     </style>
 </head>
 <body>
-    <!-- 导航栏 Logo (左上角，48px 高清) -->
+    <!-- 左上角 Logo -->
     <nav class="nav">
         <div class="container nav-container">
             <a href="#" class="nav-logo">
-                <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo-large.png" alt="Error Lab">
+                <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab">
             </a>
             <div class="nav-menu">
                 <a href="#problem" class="nav-link">Problem</a>
@@ -528,7 +504,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section - 无Logo -->
+    <!-- Hero -->
     <section class="hero">
         <div class="container">
             <h1 class="hero-title fade-in">QuietButt™</h1>
@@ -565,7 +541,7 @@
         </div>
     </section>
 
-    <!-- Problem Section -->
+    <!-- Problem -->
     <section id="problem" class="problem">
         <div class="container">
             <div class="problem-header">
@@ -592,14 +568,13 @@
         </div>
     </section>
 
-    <!-- Solution Section -->
+    <!-- Solution -->
     <section id="solution" class="solution">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">The Engineering Solution</h2>
             <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">
                 QuietButt™ employs multi-layer fabric technology to address both audible and olfactory concerns.
             </p>
-            
             <div class="solution-features">
                 <div class="feature fade-in">
                     <div class="feature-icon">🔇</div>
@@ -625,12 +600,11 @@
         </div>
     </section>
 
-    <!-- Technology Section -->
+    <!-- Technology -->
     <section id="technology" class="technology">
         <div class="container">
             <h2 class="h2 fade-in">Technical Specifications</h2>
             <p class="body-large fade-in">Engineered for discretion, comfort, and effectiveness.</p>
-            
             <div class="tech-specs">
                 <div class="spec-item fade-in">
                     <h3 class="h3">Fabric Composition</h3>
@@ -660,14 +634,13 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials -->
     <section id="testimonials" class="testimonials">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">Trusted by Thousands</h2>
             <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto;">
                 Real stories from people who reclaimed their social confidence.
             </p>
-            
             <div class="testimonial-grid">
                 <div class="testimonial-card fade-in">
                     <p class="testimonial-text">"I'm a high school teacher. Classroom presentations were a nightmare until I found QuietButt. Now I can focus on teaching, not worrying. Life-changing."</p>
@@ -688,14 +661,13 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- FAQ -->
     <section id="faq" class="faq">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">Frequently Asked Questions</h2>
             <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
                 Everything you need to know about QuietButt™.
             </p>
-            
             <div class="faq-grid">
                 <div class="faq-item fade-in">
                     <h3 class="faq-question">How does it work?</h3>
@@ -733,7 +705,7 @@
         </div>
     </section>
 
-    <!-- CTA Section - 无Logo -->
+    <!-- CTA (无Logo) -->
     <section id="purchase" class="cta">
         <div class="container">
             <h2 class="cta-title fade-in">Reclaim Your Social Freedom</h2>
@@ -748,13 +720,13 @@
         </div>
     </section>
 
-    <!-- 页脚 Logo (底部，48px 高清) -->
+    <!-- 底部 Logo -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
                     <div class="footer-logo">
-                        <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo-large.png" alt="Error Lab">
+                        <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab">
                         <span class="footer-logo-text">Error Lab</span>
                     </div>
                     <ul class="footer-links">
@@ -801,43 +773,29 @@
     </footer>
 
     <script>
-        // Fade-in animation on scroll
         document.addEventListener('DOMContentLoaded', function() {
             const fadeElements = document.querySelectorAll('.fade-in');
-            
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                     }
                 });
-            }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -100px 0px'
-            });
+            }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
+            fadeElements.forEach(element => observer.observe(element));
             
-            fadeElements.forEach(element => {
-                observer.observe(element);
-            });
-            
-            // Smooth scroll for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
-                    
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
+                        window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
                     }
                 });
             });
             
-            // Purchase button demo
             const ctaButton = document.querySelector('.cta-button');
             if (ctaButton) {
                 ctaButton.addEventListener('click', function(e) {
