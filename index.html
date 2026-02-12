@@ -118,7 +118,7 @@
         }
         
         .nav-logo img {
-            height: 48px;      /* 高清大图，显示清晰 */
+            height: 48px;          /* 高清大图，清晰可见 */
             width: auto;
             display: block;
         }
@@ -142,7 +142,7 @@
             color: var(--black);
         }
         
-        /* Hero Section - 删除Logo区块，只保留标题 */
+        /* Hero Section (无Logo) */
         .hero {
             padding: 20rem 0 10rem;
             text-align: center;
@@ -342,7 +342,7 @@
             line-height: 1.6;
         }
         
-        /* CTA Section - 删除Logo区块，只保留文字按钮 */
+        /* CTA Section (无Logo) */
         .cta {
             padding: 15rem 0;
             background: var(--black);
@@ -430,7 +430,7 @@
         }
         
         .footer-logo img {
-            height: 48px;      /* 高清大图，与导航栏一致 */
+            height: 48px;          /* 与导航栏一致，高清 */
             width: auto;
             display: block;
         }
@@ -528,7 +528,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section - 已移除Logo，只留标题 -->
+    <!-- Hero Section - 无Logo -->
     <section class="hero">
         <div class="container">
             <h1 class="hero-title fade-in">QuietButt™</h1>
@@ -539,11 +539,201 @@
         </div>
     </section>
 
-    <!-- 其余内容保持不变（Product、Problem、Solution、Technology、Testimonials、FAQ）-->
-    <!-- ... 这里省略中间部分（完全与上一版相同，只是去掉了hero-logo和cta-logo）... -->
-    <!-- 注意：由于篇幅限制，这里不重复粘贴完整代码，但我会在最终答案里给你完整版 -->
+    <!-- Product Showcase -->
+    <section class="product-showcase">
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-info">
+                    <h2 class="h2 fade-in">Social Dignity,<br>Reengineered</h2>
+                    <p class="body-large fade-in" style="margin-bottom: 3rem;">
+                        QuietButt™ reduces both sound and odor of flatulence using layered acoustic-diffusion fabric 
+                        and odor-neutralizing filters, allowing users to maintain social dignity without behavioral suppression.
+                    </p>
+                    <div class="body-small fade-in">
+                        <p style="margin-bottom: 0.5rem;">✓ Sound diffusion technology</p>
+                        <p style="margin-bottom: 0.5rem;">✓ Odor neutralization layer</p>
+                        <p style="margin-bottom: 0.5rem;">✓ Invisible, wearable, everyday use</p>
+                        <p>✓ No behavior change required</p>
+                    </div>
+                </div>
+                <div class="product-image fade-in">
+                    <div class="image-placeholder">
+                        <span style="font-size: 1.6rem; font-weight: 500; color: var(--gray-600);">QuietButt™</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- CTA Section - 已移除Logo，只留文字 -->
+    <!-- Problem Section -->
+    <section id="problem" class="problem">
+        <div class="container">
+            <div class="problem-header">
+                <h2 class="h2 fade-in">The Unspoken Problem</h2>
+                <p class="body-large fade-in">Social anxiety caused by involuntary bodily sounds affects millions daily.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card fade-in">
+                    <div class="problem-number">01</div>
+                    <h3 class="h3">Public Embarrassment</h3>
+                    <p>Involuntary flatulence in meetings, classrooms, and dates causes immediate social discomfort and awkwardness.</p>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="problem-number">02</div>
+                    <h3 class="h3">Chronic Anxiety</h3>
+                    <p>Constant worry about potential incidents creates ongoing stress and hypervigilance in social and professional settings.</p>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="problem-number">03</div>
+                    <h3 class="h3">Confidence Erosion</h3>
+                    <p>Repeated embarrassing situations lead to diminished self-esteem, social withdrawal, and avoidance behaviors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <h2 class="h2 fade-in" style="text-align: center;">The Engineering Solution</h2>
+            <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">
+                QuietButt™ employs multi-layer fabric technology to address both audible and olfactory concerns.
+            </p>
+            
+            <div class="solution-features">
+                <div class="feature fade-in">
+                    <div class="feature-icon">🔇</div>
+                    <h3 class="h3">Sound Diffusion</h3>
+                    <p>Acoustic-diffusion fabric disperses sound waves, reducing audible output by 90%+ in laboratory testing.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">🌫️</div>
+                    <h3 class="h3">Odor Neutralization</h3>
+                    <p>Activated carbon filters absorb and neutralize odors upon release. Replaceable cartridge lasts 30 days.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">👁️</div>
+                    <h3 class="h3">Invisible Design</h3>
+                    <p>Indistinguishable from regular underwear. No visible bulk, seams, or indicators. No one will know.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="h3">Zero Maintenance</h3>
+                    <p>Wear daily. No behavior modification, dietary restrictions, or lifestyle changes required. Machine washable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <h2 class="h2 fade-in">Technical Specifications</h2>
+            <p class="body-large fade-in">Engineered for discretion, comfort, and effectiveness.</p>
+            
+            <div class="tech-specs">
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Fabric Composition</h3>
+                    <p>Three-layer construction: Outer cotton blend (95% cotton, 5% spandex), acoustic-diffusion polyester middle layer, odor-neutralizing activated carbon inner lining.</p>
+                </div>
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Sound Reduction</h3>
+                    <p>90%+ reduction in audible frequency range (100-500Hz). Independently laboratory tested and verified using ISO 3744 standards.</p>
+                </div>
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Odor Control</h3>
+                    <p>Activated carbon filter effective for 8-12 hours of continuous wear. Replaceable cartridge system (€9.99/3-pack).</p>
+                </div>
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Comfort & Fit</h3>
+                    <p>Breathable cotton exterior, seamless edges, moisture-wicking. Available in sizes XS-XXL. Machine wash cold, air dry.</p>
+                </div>
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Weight & Thickness</h3>
+                    <p>Adds only 2mm thickness compared to standard underwear. Total weight: 85g (size M).</p>
+                </div>
+                <div class="spec-item fade-in">
+                    <h3 class="h3">Durability</h3>
+                    <p>Maintains 95% effectiveness after 50 washes. Replace recommended after 6 months of daily use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="h2 fade-in" style="text-align: center;">Trusted by Thousands</h2>
+            <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto;">
+                Real stories from people who reclaimed their social confidence.
+            </p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"I'm a high school teacher. Classroom presentations were a nightmare until I found QuietButt. Now I can focus on teaching, not worrying. Life-changing."</p>
+                    <p class="testimonial-author">Sarah M.</p>
+                    <p class="testimonial-title">High School Teacher</p>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"Board meetings used to trigger anxiety attacks. Three months with QuietButt and I actually look forward to client presentations. Worth every penny."</p>
+                    <p class="testimonial-author">James R.</p>
+                    <p class="testimonial-title">Marketing Director</p>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"Dating was impossible for me. First dates meant constant fear. My girlfriend of 6 months has no idea I wear them. That's the point."</p>
+                    <p class="testimonial-author">Alex T.</p>
+                    <p class="testimonial-title">Software Engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="h2 fade-in" style="text-align: center;">Frequently Asked Questions</h2>
+            <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
+                Everything you need to know about QuietButt™.
+            </p>
+            
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">How does it work?</h3>
+                    <p class="faq-answer">Three-layer technology: outer cotton for comfort, middle acoustic-diffusion layer disperses sound waves, inner activated carbon layer neutralizes odor instantly upon release.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">Is it noticeable?</h3>
+                    <p class="faq-answer">No. QuietButt™ is designed to be indistinguishable from regular underwear. Same silhouette, same comfort, zero visible indicators.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">How do I wash it?</h3>
+                    <p class="faq-answer">Machine wash cold with like colors. Air dry only. Do not bleach or iron. Effectiveness maintained for 50+ washes.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">How long do filters last?</h3>
+                    <p class="faq-answer">Each odor-neutralizing cartridge lasts approximately 30 days of daily use. Replacement 3-packs available for €9.99.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">Sizing guide?</h3>
+                    <p class="faq-answer">XS (28-30), S (32-34), M (36-38), L (40-42), XL (44-46), XXL (48-50). Fit true to size.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">Return policy?</h3>
+                    <p class="faq-answer">30-day money-back guarantee. Unused items in original packaging qualify for full refund. No questions asked.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">Shipping?</h3>
+                    <p class="faq-answer">Free standard shipping (5-7 business days) on all orders. Express shipping (2-3 days) available for €7.99.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3 class="faq-question">Is it discreet?</h3>
+                    <p class="faq-answer">Yes. Orders ship in plain, unmarked packaging with no branding or product description visible externally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section - 无Logo -->
     <section id="purchase" class="cta">
         <div class="container">
             <h2 class="cta-title fade-in">Reclaim Your Social Freedom</h2>
@@ -574,7 +764,6 @@
                         <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
-                <!-- 其他三列保持不变 -->
                 <div class="footer-column">
                     <h4>Product</h4>
                     <ul class="footer-links">
@@ -612,30 +801,43 @@
     </footer>
 
     <script>
-        // 滚动动画等保持不变
+        // Fade-in animation on scroll
         document.addEventListener('DOMContentLoaded', function() {
             const fadeElements = document.querySelectorAll('.fade-in');
+            
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                     }
                 });
-            }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
-            fadeElements.forEach(element => observer.observe(element));
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            });
             
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Smooth scroll for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
+                anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
+                    
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
-                        window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
                     }
                 });
             });
             
+            // Purchase button demo
             const ctaButton = document.querySelector('.cta-button');
             if (ctaButton) {
                 ctaButton.addEventListener('click', function(e) {
