@@ -140,9 +140,27 @@
         }
         
         .hero {
+            position: relative;
             padding: 20rem 0 10rem;
             text-align: center;
-            background: var(--white);
+            background-color: var(--gray-900);
+            background-image: url('https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--white);
+            isolation: isolate;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
         }
         
         .hero-title {
@@ -151,13 +169,16 @@
             letter-spacing: -0.03em;
             margin-bottom: 2rem;
             line-height: 1.1;
+            color: var(--white);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         
         .hero-subtitle {
             font-size: 2rem;
-            color: var(--gray-600);
+            color: rgba(255,255,255,0.9);
             max-width: 600px;
             margin: 0 auto 4rem;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
         }
         
         .product-showcase {
@@ -180,16 +201,11 @@
             position: relative;
         }
         
-        .image-placeholder {
-            background: var(--gray-100);
-            aspect-ratio: 4/5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gray-400);
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
+        .product-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
         }
         
         .problem {
@@ -487,7 +503,6 @@
     </style>
 </head>
 <body>
-    <!-- 左上角 Logo -->
     <nav class="nav">
         <div class="container nav-container">
             <a href="#" class="nav-logo">
@@ -504,7 +519,6 @@
         </div>
     </nav>
 
-    <!-- Hero -->
     <section class="hero">
         <div class="container">
             <h1 class="hero-title fade-in">QuietButt™</h1>
@@ -515,7 +529,6 @@
         </div>
     </section>
 
-    <!-- Product Showcase -->
     <section class="product-showcase">
         <div class="container">
             <div class="product-grid">
@@ -533,15 +546,12 @@
                     </div>
                 </div>
                 <div class="product-image fade-in">
-                    <div class="image-placeholder">
-                        <span style="font-size: 1.6rem; font-weight: 500; color: var(--gray-600);">QuietButt™</span>
-                    </div>
+                    <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-product.png" alt="QuietButt Product Structure">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Problem -->
     <section id="problem" class="problem">
         <div class="container">
             <div class="problem-header">
@@ -568,7 +578,6 @@
         </div>
     </section>
 
-    <!-- Solution -->
     <section id="solution" class="solution">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">The Engineering Solution</h2>
@@ -600,7 +609,6 @@
         </div>
     </section>
 
-    <!-- Technology -->
     <section id="technology" class="technology">
         <div class="container">
             <h2 class="h2 fade-in">Technical Specifications</h2>
@@ -634,7 +642,6 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
     <section id="testimonials" class="testimonials">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">Trusted by Thousands</h2>
@@ -661,7 +668,6 @@
         </div>
     </section>
 
-    <!-- FAQ -->
     <section id="faq" class="faq">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">Frequently Asked Questions</h2>
@@ -705,7 +711,6 @@
         </div>
     </section>
 
-    <!-- CTA (无Logo) -->
     <section id="purchase" class="cta">
         <div class="container">
             <h2 class="cta-title fade-in">Reclaim Your Social Freedom</h2>
@@ -713,14 +718,13 @@
                 Join 10,000+ customers who have eliminated social anxiety from their daily lives. 
                 Experience confidence in every situation.
             </p>
-            <a href="#" class="cta-button fade-in">Purchase QuietButt™ — €49.99</a>
+            <a href="#" class="cta-button fade-in">Purchase QuietButt™ — €29.99</a>
             <p class="body-small fade-in" style="margin-top: 2rem; color: var(--gray-400);">
                 30-day money-back guarantee • Free shipping • Discreet packaging
             </p>
         </div>
     </section>
 
-    <!-- 底部 Logo -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -807,3 +811,4 @@
     </script>
 </body>
 </html>
+
