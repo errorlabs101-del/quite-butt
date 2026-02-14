@@ -268,8 +268,8 @@
         }
         
         .feature-image {
-            width: 80px;
-            height: 80px;
+            width: 160px;  /* 从80px改为160px，放大一倍 */
+            height: 160px; /* 从80px改为160px，放大一倍 */
             margin-bottom: 2rem;
             object-fit: contain;
             display: block;
@@ -565,6 +565,10 @@
             .solution-features {
                 grid-template-columns: repeat(2, 1fr);
             }
+            .feature-image {
+                width: 120px;  /* 移动端适当缩小，但仍比原来大 */
+                height: 120px;
+            }
             .tech-specs {
                 grid-template-columns: 1fr;
             }
@@ -688,7 +692,7 @@
         </div>
     </section>
 
-    <!-- Solution Section with Images replacing emojis -->
+    <!-- Solution Section with Images (now 160px) -->
     <section id="solution" class="solution">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">The Engineering Solution</h2>
