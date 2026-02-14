@@ -1,4 +1,4 @@
-<!index html>
+<index html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,6 +29,8 @@
             --gray-700: #404040;
             --gray-800: #262626;
             --gray-900: #171717;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
         }
         
         * {
@@ -229,6 +231,17 @@
         .problem-card {
             text-align: center;
             padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .problem-image {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 2rem;
+            border-radius: 8px;
         }
         
         .problem-number {
@@ -379,6 +392,7 @@
             text-transform: uppercase;
             border: 1px solid var(--white);
             transition: all 0.2s ease;
+            cursor: pointer;
         }
         
         .cta-button:hover {
@@ -452,6 +466,85 @@
             color: var(--gray-600);
             font-size: 1.2rem;
         }
+
+        .purchase-button {
+            display: inline-block;
+            padding: 1.6rem 4rem;
+            background: var(--black);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border: 2px solid var(--black);
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .purchase-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .purchase-button:hover {
+            background: var(--white);
+            color: var(--black);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            border-color: var(--black);
+        }
+
+        .purchase-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .purchase-button:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.1s;
+        }
+
+        .purchase-button.white-version {
+            background: var(--white);
+            color: var(--black);
+            border-color: var(--white);
+        }
+
+        .purchase-button.white-version:hover {
+            background: transparent;
+            color: var(--white);
+            border-color: var(--white);
+        }
+
+        .purchase-button.white-version::before {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .guarantee-text {
+            margin-top: 1.5rem;
+            font-size: 1.3rem;
+            color: var(--gray-500);
+            letter-spacing: 0.05em;
+        }
         
         @media (max-width: 768px) {
             .h1, .hero-title {
@@ -487,6 +580,10 @@
             }
             .hero {
                 padding: 15rem 0 6rem;
+            }
+            .purchase-button {
+                padding: 1.4rem 3rem;
+                font-size: 1.4rem;
             }
         }
         
@@ -550,15 +647,16 @@
                 </div>
             </div>
             
-            <!-- Purchase Button Below Product Image -->
-            <div style="text-align: center; margin-top: 4rem;">
-                <a href="#" class="cta-button" style="display: inline-block;">Purchase QuietButt™ — €29.99</a>
-                <p style="margin-top: 1rem; font-size: 1.2rem; color: var(--gray-500);">30-day money-back guarantee • Free shipping • Discreet packaging</p>
+            <!-- Enhanced Purchase Button with Animations -->
+            <div class="button-container fade-in">
+                <a href="#" class="purchase-button" onclick="alert('Thank you for your interest in QuietButt™. This is a demo version.'); return false;">Purchase QuietButt™ — €29.99</a>
+                <p class="guarantee-text">30-day money-back guarantee • Free shipping • Discreet packaging</p>
             </div>
             
         </div>
     </section>
 
+    <!-- Problem Section with Images -->
     <section id="problem" class="problem">
         <div class="container">
             <div class="problem-header">
@@ -567,16 +665,19 @@
             </div>
             <div class="problem-grid">
                 <div class="problem-card fade-in">
+                    <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-unspoken%20problem1.png" alt="Public Embarrassment" class="problem-image">
                     <div class="problem-number">01</div>
                     <h3 class="h3">Public Embarrassment</h3>
                     <p>Involuntary flatulence in meetings, classrooms, and dates causes immediate social discomfort and awkwardness.</p>
                 </div>
                 <div class="problem-card fade-in">
+                    <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-unspoken%20problem2.png" alt="Chronic Anxiety" class="problem-image">
                     <div class="problem-number">02</div>
                     <h3 class="h3">Chronic Anxiety</h3>
                     <p>Constant worry about potential incidents creates ongoing stress and hypervigilance in social and professional settings.</p>
                 </div>
                 <div class="problem-card fade-in">
+                    <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-unspoken%20problem3.png" alt="Confidence Erosion" class="problem-image">
                     <div class="problem-number">03</div>
                     <h3 class="h3">Confidence Erosion</h3>
                     <p>Repeated embarrassing situations lead to diminished self-esteem, social withdrawal, and avoidance behaviors.</p>
@@ -725,7 +826,7 @@
                 Join 10,000+ customers who have eliminated social anxiety from their daily lives. 
                 Experience confidence in every situation.
             </p>
-            <a href="#" class="cta-button fade-in">Purchase QuietButt™ — €29.99</a>
+            <a href="#" class="purchase-button white-version fade-in" onclick="alert('Thank you for your interest in QuietButt™. This is a demo version.'); return false;">Purchase QuietButt™ — €29.99</a>
             <p class="body-small fade-in" style="margin-top: 2rem; color: var(--gray-400);">
                 30-day money-back guarantee • Free shipping • Discreet packaging
             </p>
@@ -807,13 +908,20 @@
                 });
             });
             
-            const ctaButton = document.querySelector('.cta-button');
-            if (ctaButton) {
-                ctaButton.addEventListener('click', function(e) {
+            // Add click animation to all purchase buttons
+            const purchaseButtons = document.querySelectorAll('.purchase-button');
+            purchaseButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
                     e.preventDefault();
+                    // Add click effect
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                    
                     alert('Thank you for your interest in QuietButt™.\n\nThis is a demonstration page for educational purposes.\n\nIn a production environment, this would redirect to a secure checkout.');
                 });
-            }
+            });
         });
     </script>
 </body>
