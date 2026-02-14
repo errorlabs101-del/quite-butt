@@ -29,8 +29,6 @@
             --gray-700: #404040;
             --gray-800: #262626;
             --gray-900: #171717;
-            --accent: #3b82f6;
-            --accent-hover: #2563eb;
         }
         
         * {
@@ -269,10 +267,14 @@
             padding: 2rem;
         }
         
-        .feature-icon {
-            font-size: 2.4rem;
+        .feature-image {
+            width: 80px;
+            height: 80px;
             margin-bottom: 2rem;
-            color: var(--gray-700);
+            object-fit: contain;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .technology {
@@ -686,6 +688,7 @@
         </div>
     </section>
 
+    <!-- Solution Section with Images replacing emojis -->
     <section id="solution" class="solution">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">The Engineering Solution</h2>
@@ -694,22 +697,22 @@
             </p>
             <div class="solution-features">
                 <div class="feature fade-in">
-                    <div class="feature-icon">🔇</div>
+                    <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-solution1.png" alt="Sound Diffusion" class="feature-image">
                     <h3 class="h3">Sound Diffusion</h3>
                     <p>Acoustic-diffusion fabric disperses sound waves, reducing audible output by 90%+ in laboratory testing.</p>
                 </div>
                 <div class="feature fade-in">
-                    <div class="feature-icon">🌫️</div>
+                    <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-solution2.png" alt="Odor Neutralization" class="feature-image">
                     <h3 class="h3">Odor Neutralization</h3>
                     <p>Activated carbon filters absorb and neutralize odors upon release. Replaceable cartridge lasts 30 days.</p>
                 </div>
                 <div class="feature fade-in">
-                    <div class="feature-icon">👁️</div>
+                    <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-solution3.png" alt="Invisible Design" class="feature-image">
                     <h3 class="h3">Invisible Design</h3>
                     <p>Indistinguishable from regular underwear. No visible bulk, seams, or indicators. No one will know.</p>
                 </div>
                 <div class="feature fade-in">
-                    <div class="feature-icon">⚡</div>
+                    <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-solution4.png" alt="Zero Maintenance" class="feature-image">
                     <h3 class="h3">Zero Maintenance</h3>
                     <p>Wear daily. No behavior modification, dietary restrictions, or lifestyle changes required. Machine washable.</p>
                 </div>
@@ -926,5 +929,3 @@
     </script>
 </body>
 </html>
-
-
