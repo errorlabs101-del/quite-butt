@@ -139,19 +139,22 @@
             color: var(--black);
         }
         
+        /* Hero 区域 - 调整背景图片显示方式为完整包含 */
         .hero {
             position: relative;
             padding: 20rem 0 10rem;
             text-align: center;
-            background-color: var(--gray-900);
-            background-image: url('https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-banner.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            /* 设置一个和图片主色调相近的背景色，防止 contain 时两侧露白 */
+            background-color: #2a2a2a; 
+            background-image: url('https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-banner.png?v=3'); /* 版本号强制刷新缓存 */
+            background-size: contain;     /* 改为 contain，确保图片完整显示 */
+            background-position: center;  /* 居中显示 */
+            background-repeat: no-repeat; /* 不重复 */
             color: var(--white);
             isolation: isolate;
         }
         
+        /* 深色覆盖层调淡一些，让图片更清晰，同时保持文字可读 */
         .hero::before {
             content: '';
             position: absolute;
@@ -159,7 +162,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.2); /* 透明度从 0.3 降为 0.2 */
             z-index: -1;
         }
         
@@ -622,6 +625,7 @@
         </div>
     </nav>
 
+    <!-- Hero 区域 - 已调整为背景图片完整显示 -->
     <section class="hero">
         <div class="container">
             <h1 class="hero-title fade-in">QuietButt™</h1>
@@ -932,4 +936,3 @@
     </script>
 </body>
 </html>
-
