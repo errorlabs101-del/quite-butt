@@ -1,4 +1,4 @@
-<index html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -114,8 +114,9 @@
             text-decoration: none;
         }
         
+        /* Logo放大一倍：从48px -> 96px */
         .nav-logo img {
-            height: 48px;
+            height: 96px;
             width: auto;
             display: block;
         }
@@ -449,8 +450,9 @@
             margin-bottom: 2rem;
         }
         
+        /* Footer logo 也放大一倍：从48px -> 96px，保持与导航一致 */
         .footer-logo img {
-            height: 48px;
+            height: 96px;
             width: auto;
             display: block;
         }
@@ -591,6 +593,13 @@
                 padding: 1.4rem 3rem;
                 font-size: 1.4rem;
             }
+            /* 移动端logo稍微缩小一点以免溢出，但依然比原来大 (96px -> 72px 保持放大感) */
+            .nav-logo img {
+                height: 72px;
+            }
+            .footer-logo img {
+                height: 72px;
+            }
         }
         
         .fade-in {
@@ -609,6 +618,7 @@
     <nav class="nav">
         <div class="container nav-container">
             <a href="#" class="nav-logo">
+                <!-- logo放大一倍 (CSS已控制) -->
                 <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab">
             </a>
             <div class="nav-menu">
@@ -844,6 +854,7 @@
             <div class="footer-grid">
                 <div class="footer-column">
                     <div class="footer-logo">
+                        <!-- footer logo 也放大一倍 (CSS已控制) -->
                         <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab">
                         <span class="footer-logo-text">Error Lab</span>
                     </div>
@@ -932,4 +943,5 @@
     </script>
 </body>
 </html>
+
 
