@@ -283,16 +283,49 @@
             background: var(--white);
         }
         
-        .tech-specs {
+        /* 技术规格小卡片样式 */
+        .tech-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 4rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
             margin-top: 6rem;
         }
         
-        .spec-item {
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--gray-200);
+        .tech-card {
+            background: var(--gray-50);
+            padding: 3rem 2.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--gray-200);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
+        }
+        
+        .tech-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            background: var(--white);
+            border-color: var(--gray-300);
+        }
+        
+        .tech-card h3 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: var(--black);
+            letter-spacing: -0.02em;
+            border-bottom: 1px solid var(--gray-300);
+            padding-bottom: 1rem;
+        }
+        
+        .tech-card p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            color: var(--gray-700);
+            margin: 0;
+            flex: 1;
         }
         
         .testimonials {
@@ -609,8 +642,10 @@
                 width: 120px;
                 height: 120px;
             }
-            .tech-specs {
-                grid-template-columns: 1fr;
+            /* 移动端技术卡片调整为2列 */
+            .tech-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
             }
             .testimonial-grid {
                 grid-template-columns: 1fr;
@@ -637,6 +672,13 @@
             }
             .footer-logo img {
                 height: 72px;
+            }
+        }
+
+        /* 超小屏幕调整为1列 */
+        @media (max-width: 480px) {
+            .tech-grid {
+                grid-template-columns: 1fr;
             }
         }
         
@@ -771,33 +813,34 @@
         </div>
     </section>
 
+    <!-- 技术规格部分 - 改为小卡片形式 -->
     <section id="technology" class="technology">
         <div class="container">
             <h2 class="h2 fade-in">Technical Specifications</h2>
-            <p class="body-large fade-in">Engineered for discretion, comfort, and effectiveness.</p>
-            <div class="tech-specs">
-                <div class="spec-item fade-in">
-                    <h3 class="h3">Fabric Composition</h3>
+            <p class="body-large fade-in">Engineered for discretion, comfort, and effectiveness. Hover over cards for details.</p>
+            <div class="tech-grid">
+                <div class="tech-card fade-in">
+                    <h3>Fabric Composition</h3>
                     <p>Three-layer construction: Outer cotton blend (95% cotton, 5% spandex), acoustic-diffusion polyester middle layer, odor-neutralizing activated carbon inner lining.</p>
                 </div>
-                <div class="spec-item fade-in">
-                    <h3 class="h3">Sound Reduction</h3>
+                <div class="tech-card fade-in">
+                    <h3>Sound Reduction</h3>
                     <p>90%+ reduction in audible frequency range (100-500Hz). Independently laboratory tested and verified using ISO 3744 standards.</p>
                 </div>
-                <div class="spec-item fade-in">
-                    <h3 class="h3">Odor Control</h3>
+                <div class="tech-card fade-in">
+                    <h3>Odor Control</h3>
                     <p>Activated carbon filter effective for 8-12 hours of continuous wear. Replaceable cartridge system (€9.99/3-pack).</p>
                 </div>
-                <div class="spec-item fade-in">
-                    <h3 class="h3">Comfort & Fit</h3>
+                <div class="tech-card fade-in">
+                    <h3>Comfort & Fit</h3>
                     <p>Breathable cotton exterior, seamless edges, moisture-wicking. Available in sizes XS-XXL. Machine wash cold, air dry.</p>
                 </div>
-                <div class="spec-item fade-in">
-                    <h3 class="h3">Weight & Thickness</h3>
+                <div class="tech-card fade-in">
+                    <h3>Weight & Thickness</h3>
                     <p>Adds only 2mm thickness compared to standard underwear. Total weight: 85g (size M).</p>
                 </div>
-                <div class="spec-item fade-in">
-                    <h3 class="h3">Durability</h3>
+                <div class="tech-card fade-in">
+                    <h3>Durability</h3>
                     <p>Maintains 95% effectiveness after 50 washes. Replace recommended after 6 months of daily use.</p>
                 </div>
             </div>
@@ -910,111 +953,4 @@
                 <div class="footer-column">
                     <div class="footer-logo">
                         <!-- footer logo 也放大一倍 (CSS已控制) -->
-                        <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab">
-                        <span class="footer-logo-text">Error Lab</span>
-                    </div>
-                    <ul class="footer-links">
-                        <li><a href="#">Our Mission</a></li>
-                        <li><a href="#">Technology</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Product</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">QuietButt™</a></li>
-                        <li><a href="#">Replacement Filters</a></li>
-                        <li><a href="#">How It Works</a></li>
-                        <li><a href="#">FAQs</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Sizing Guide</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Legal</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Warranty</a></li>
-                        <li><a href="#">Accessibility</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2024 Error Lab. All rights reserved. QuietButt™ is a trademark of Error Lab.</p>
-                <p style="margin-top: 1rem;">Designed for social confidence. Engineered for discretion. Made with integrity.</p>
-                <p style="margin-top: 2rem; font-size: 1rem; color: var(--gray-400);">⚠️ This is a demonstration page for educational purposes. Not a real product.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // 原有fade-in动画
-            const fadeElements = document.querySelectorAll('.fade-in');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
-            fadeElements.forEach(element => observer.observe(element));
-            
-            // 锚点平滑滚动
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
-                    }
-                });
-            });
-            
-            // 购买按钮点击动画
-            const purchaseButtons = document.querySelectorAll('.purchase-button');
-            purchaseButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    this.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        this.style.transform = '';
-                    }, 200);
-                    
-                    alert('Thank you for your interest in QuietButt™.\n\nThis is a demonstration page for educational purposes.\n\nIn a production environment, this would redirect to a secure checkout.');
-                });
-            });
-            
-            // ---------- 可折叠FAQ逻辑 ----------
-            const faqItems = document.querySelectorAll('.faq-item');
-            faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question');
-                question.addEventListener('click', () => {
-                    // 关闭其他打开的项目（可选，若希望同时只能展开一个，取消注释下面循环）
-                    // faqItems.forEach(otherItem => {
-                    //     if (otherItem !== item && otherItem.classList.contains('active')) {
-                    //         otherItem.classList.remove('active');
-                    //     }
-                    // });
-                    
-                    // 切换当前项
-                    item.classList.toggle('active');
-                });
-            });
-            
-            // 默认所有答案收起（active类初始无）
-        });
-    </script>
-</body>
-</html>
+                        <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt
