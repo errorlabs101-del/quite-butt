@@ -261,73 +261,6 @@
             border-radius: 8px;
         }
         
-        /* Easter Ribbon - 丝带形状标签 */
-        .easter-ribbon {
-            position: absolute;
-            top: -12px;
-            left: -12px;
-            z-index: 10;
-            width: 140px;
-            overflow: hidden;
-            height: 140px;
-        }
-        
-        .easter-ribbon::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-top: 12px solid #d47a9e;
-            border-left: 12px solid transparent;
-            z-index: 11;
-        }
-        
-        .easter-ribbon::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 0;
-            height: 0;
-            border-bottom: 12px solid #d47a9e;
-            border-right: 12px solid transparent;
-            z-index: 11;
-        }
-        
-        .ribbon-content {
-            position: absolute;
-            top: 20px;
-            left: -28px;
-            width: 170px;
-            padding: 8px 0;
-            background: linear-gradient(135deg, #f9c5d1, #f8b0c0, #f5c6a0);
-            color: #4a2a2a;
-            text-align: center;
-            font-size: 1.2rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            transform: rotate(-45deg);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            z-index: 12;
-            border: 1px solid rgba(255,255,255,0.5);
-            backdrop-filter: blur(2px);
-        }
-        
-        .ribbon-content span {
-            display: inline-block;
-            margin: 0 2px;
-        }
-        
-        .ribbon-content::before,
-        .ribbon-content::after {
-            content: "🐣";
-            font-size: 1rem;
-            margin: 0 4px;
-        }
-        
         .problem {
             padding: 10rem 0;
             background: var(--white);
@@ -864,16 +797,6 @@
             .footer-logo img {
                 height: 72px;
             }
-            .easter-ribbon {
-                width: 110px;
-                height: 110px;
-            }
-            .ribbon-content {
-                font-size: 1rem;
-                width: 150px;
-                left: -30px;
-                top: 15px;
-            }
         }
 
         @media (max-width: 480px) {
@@ -889,17 +812,6 @@
             }
             .hero {
                 padding: 18rem 0 6rem;
-            }
-            .easter-ribbon {
-                width: 90px;
-                height: 90px;
-            }
-            .ribbon-content {
-                font-size: 0.85rem;
-                width: 130px;
-                left: -28px;
-                top: 12px;
-                padding: 6px 0;
             }
         }
         
@@ -918,7 +830,7 @@
 <body>
     <!-- Easter Fixed Banner -->
     <div class="easter-banner">
-        <span>🐣 FIRST 50 ORDERS WIN A FREE QUiETBUTT™ + EASTER EGG SURPRISE! 🥚</span>
+        <span>🐣 FIRST 50 ORDERS WIN QUiETBUTT™ FOR FREE + EASTER EGG SURPRISE! 🥚</span>
     </div>
     
     <nav class="nav">
@@ -963,18 +875,11 @@
                     </div>
                 </div>
                 <div class="product-image fade-in">
-                    <!-- Easter Ribbon on Product Image -->
-                    <div class="easter-ribbon">
-                        <div class="ribbon-content">
-                            <span>🐣 EASTER</span><br>
-                            <span>SPECIAL</span>
-                        </div>
-                    </div>
                     <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-product.png" alt="QuietButt Product Structure">
                 </div>
             </div>
             
-            <!-- Enhanced Purchase Button with Easter Theme (直接应用Easter颜色) -->
+            <!-- Enhanced Purchase Button with Easter Theme -->
             <div class="button-container fade-in">
                 <a href="#" class="purchase-button" onclick="alert('🐣 Easter Special Offer! First 50 orders win a FREE QuietButt™! 🎁 This is a demo version.'); return false;">🐰 Easter Special Offer — €29.99 🥚</a>
                 <p class="guarantee-text">🎁 First 50 orders get a FREE QuietButt™ • 30-day guarantee • Free shipping • Discreet packaging 🐣</p>
@@ -1045,7 +950,7 @@
         </div>
     </section>
 
-    <!-- 技术规格部分 - 小卡片形式 -->
+    <!-- 技术规格部分 -->
     <section id="technology" class="technology">
         <div class="container">
             <h2 class="h2 fade-in">Technical Specifications</h2>
