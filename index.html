@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>QuietButt™ | 社交自信通过创新科技 | Error Lab</title>
-    <meta name="description" content="QuietButt™：采用声学扩散技术的消音内裤，消除社交焦虑。专业、可靠、日常适用。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Lab | QuietButt™ - Social Confidence Through Innovation</title>
+    <meta name="description" content="QuietButt™: Revolutionary fart-silencing underwear using acoustic-diffusion technology. Eliminate social anxiety from involuntary flatulence.">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N70V0RJGEX"></script>
@@ -29,9 +29,6 @@
             --gray-700: #404040;
             --gray-800: #262626;
             --gray-900: #171717;
-            /* 中性交互色 */
-            --hover-bg-light: #f8f8f8;
-            --hover-border-light: #e0e0e0;
         }
         
         * {
@@ -53,32 +50,6 @@
             background: var(--white);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-        }
-        
-        /* 导航栏 - 固定在顶部 */
-        .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: var(--white);
-            border-bottom: 1px solid var(--gray-200);
-            z-index: 1000;
-            padding: 2rem 0;
-        }
-        
-        /* 调整hero顶部内边距，适应固定导航栏 */
-        .hero {
-            position: relative;
-            padding: 16rem 0 10rem;
-            text-align: center;
-            background-color: var(--gray-900);
-            background-image: url('https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-banner.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: var(--white);
-            isolation: isolate;
         }
         
         .container {
@@ -120,6 +91,17 @@
             color: var(--gray-600);
         }
         
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-200);
+            z-index: 1000;
+            padding: 2rem 0;
+        }
+        
         .nav-container {
             display: flex;
             justify-content: space-between;
@@ -155,6 +137,19 @@
         
         .nav-link:hover {
             color: var(--black);
+        }
+        
+        .hero {
+            position: relative;
+            padding: 20rem 0 10rem;
+            text-align: center;
+            background-color: var(--gray-900);
+            background-image: url('https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-banner.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--white);
+            isolation: isolate;
         }
         
         .hero::before {
@@ -204,7 +199,6 @@
         
         .product-image {
             position: relative;
-            display: inline-block;
         }
         
         .product-image img {
@@ -212,7 +206,6 @@
             height: auto;
             display: block;
             border-radius: 8px;
-            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
         }
         
         .problem {
@@ -239,13 +232,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            transition: all 0.3s ease;
-            border-radius: 16px;
-        }
-        
-        .problem-card:hover {
-            background: var(--hover-bg-light);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
         
         .problem-image {
@@ -279,13 +265,6 @@
         .feature {
             text-align: center;
             padding: 2rem;
-            border-radius: 20px;
-            transition: all 0.3s ease;
-        }
-        
-        .feature:hover {
-            background: var(--hover-bg-light);
-            transform: translateY(-4px);
         }
         
         .feature-image {
@@ -364,13 +343,6 @@
             padding: 4rem;
             border: 1px solid var(--gray-200);
             border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-        
-        .testimonial-card:hover {
-            border-color: var(--gray-300);
-            background: var(--hover-bg-light);
-            transform: translateY(-2px);
         }
         
         .testimonial-text {
@@ -407,7 +379,6 @@
         
         .faq-item {
             border-bottom: 1px solid var(--gray-200);
-            transition: all 0.2s ease;
         }
         
         .faq-question {
@@ -466,8 +437,6 @@
             background: var(--black);
             color: var(--white);
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
         
         .cta-title {
@@ -481,86 +450,6 @@
             color: var(--gray-300);
             max-width: 600px;
             margin: 0 auto 4rem;
-        }
-        
-        /* 中性专业按钮样式 */
-        .purchase-button {
-            display: inline-block;
-            padding: 1.6rem 4rem;
-            background: #1a1a1a;
-            color: var(--white);
-            text-decoration: none;
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            border: 2px solid var(--gray-700);
-            border-radius: 50px;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
-        .purchase-button::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            transform: translate(-50%, -50%);
-            transition: width 0.6s, height 0.6s;
-        }
-
-        .purchase-button:hover {
-            background: #333333;
-            border-color: var(--gray-500);
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            color: var(--white);
-        }
-
-        .purchase-button:hover::before {
-            width: 300px;
-            height: 300px;
-        }
-
-        .purchase-button:active {
-            transform: translateY(0) scale(0.98);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-            transition: all 0.1s;
-        }
-
-        .purchase-button.white-version {
-            background: var(--white);
-            color: var(--black);
-            border: 2px solid var(--gray-400);
-        }
-
-        .purchase-button.white-version:hover {
-            background: var(--gray-100);
-            border-color: var(--gray-600);
-            color: var(--black);
-        }
-
-        .purchase-button.white-version::before {
-            background: rgba(0,0,0,0.05);
-        }
-        
-        .button-container {
-            text-align: center;
-            margin-top: 5rem;
-        }
-
-        .guarantee-text {
-            margin-top: 1.5rem;
-            font-size: 1.3rem;
-            color: var(--gray-500);
-            letter-spacing: 0.05em;
         }
         
         .footer {
@@ -629,11 +518,87 @@
             color: var(--gray-600);
             font-size: 1.2rem;
         }
+
+        .purchase-button {
+            display: inline-block;
+            padding: 1.6rem 4rem;
+            background: var(--black);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border: 2px solid var(--black);
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .purchase-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .purchase-button:hover {
+            background: var(--white);
+            color: var(--black);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            border-color: var(--black);
+        }
+
+        .purchase-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .purchase-button:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.1s;
+        }
+
+        .purchase-button.white-version {
+            background: var(--white);
+            color: var(--black);
+            border-color: var(--white);
+        }
+
+        .purchase-button.white-version:hover {
+            background: transparent;
+            color: var(--white);
+            border-color: var(--white);
+        }
+
+        .purchase-button.white-version::before {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .guarantee-text {
+            margin-top: 1.5rem;
+            font-size: 1.3rem;
+            color: var(--gray-500);
+            letter-spacing: 0.05em;
+        }
         
         @media (max-width: 768px) {
-            .hero {
-                padding: 14rem 0 6rem;
-            }
             .h1, .hero-title {
                 font-size: 3.6rem;
             }
@@ -670,6 +635,9 @@
             .nav-menu {
                 display: none;
             }
+            .hero {
+                padding: 15rem 0 6rem;
+            }
             .purchase-button {
                 padding: 1.4rem 3rem;
                 font-size: 1.4rem;
@@ -685,9 +653,6 @@
         @media (max-width: 480px) {
             .tech-grid {
                 grid-template-columns: 1fr;
-            }
-            .hero {
-                padding: 12rem 0 6rem;
             }
         }
         
@@ -750,16 +715,14 @@
                 </div>
             </div>
             
-            <!-- 标准购买按钮 -->
             <div class="button-container fade-in">
-                <a href="#" class="purchase-button" onclick="alert('QuietButt™ — Secure checkout. This is a demonstration page for educational purposes.'); return false;">Purchase QuietButt™ — €29.99</a>
-                <p class="guarantee-text">30-day guarantee • Free shipping • Discreet packaging</p>
+                <a href="#" class="purchase-button" onclick="alert('Thank you for your interest in QuietButt™. This is a demo version.'); return false;">Purchase QuietButt™ — €29.99</a>
+                <p class="guarantee-text">30-day money-back guarantee • Free shipping • Discreet packaging</p>
             </div>
             
         </div>
     </section>
 
-    <!-- Problem Section with Images -->
     <section id="problem" class="problem">
         <div class="container">
             <div class="problem-header">
@@ -789,7 +752,6 @@
         </div>
     </section>
 
-    <!-- Solution Section with Images -->
     <section id="solution" class="solution">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">The Engineering Solution</h2>
@@ -824,14 +786,32 @@
     <section id="technology" class="technology">
         <div class="container">
             <h2 class="h2 fade-in">Technical Specifications</h2>
-            <p class="body-large fade-in">Engineered for discretion, comfort, and effectiveness.</p>
+            <p class="body-large fade-in">Engineered for discretion, comfort, and effectiveness. Hover over cards for details.</p>
             <div class="tech-grid">
-                <div class="tech-card fade-in"><h3>Fabric Composition</h3><p>Three-layer construction: Outer cotton blend (95% cotton, 5% spandex), acoustic-diffusion polyester middle layer, odour-neutralizing activated carbon inner lining.</p></div>
-                <div class="tech-card fade-in"><h3>Sound Reduction</h3><p>90%+ reduction in audible frequency range (100-500Hz). Independently laboratory tested and verified using ISO 3744 standards.</p></div>
-                <div class="tech-card fade-in"><h3>Odour Control</h3><p>Activated carbon filter effective for 8-12 hours of continuous wear. Replaceable cartridge system (€9.99/3-pack).</p></div>
-                <div class="tech-card fade-in"><h3>Comfort & Fit</h3><p>Breathable cotton exterior, seamless edges, moisture-wicking. Available in sizes XS-XXL. Machine wash cold, air dry.</p></div>
-                <div class="tech-card fade-in"><h3>Weight & Thickness</h3><p>Adds only 2mm thickness compared to standard underwear. Total weight: 85g (size M).</p></div>
-                <div class="tech-card fade-in"><h3>Durability</h3><p>Maintains 95% effectiveness after 50 washes. Replace recommended after 6 months of daily use.</p></div>
+                <div class="tech-card fade-in">
+                    <h3>Fabric Composition</h3>
+                    <p>Three-layer construction: Outer cotton blend (95% cotton, 5% spandex), acoustic-diffusion polyester middle layer, odour-neutralizing activated carbon inner lining.</p>
+                </div>
+                <div class="tech-card fade-in">
+                    <h3>Sound Reduction</h3>
+                    <p>90%+ reduction in audible frequency range (100-500Hz). Independently laboratory tested and verified using ISO 3744 standards.</p>
+                </div>
+                <div class="tech-card fade-in">
+                    <h3>Odour Control</h3>
+                    <p>Activated carbon filter effective for 8-12 hours of continuous wear. Replaceable cartridge system (€9.99/3-pack).</p>
+                </div>
+                <div class="tech-card fade-in">
+                    <h3>Comfort & Fit</h3>
+                    <p>Breathable cotton exterior, seamless edges, moisture-wicking. Available in sizes XS-XXL. Machine wash cold, air dry.</p>
+                </div>
+                <div class="tech-card fade-in">
+                    <h3>Weight & Thickness</h3>
+                    <p>Adds only 2mm thickness compared to standard underwear. Total weight: 85g (size M).</p>
+                </div>
+                <div class="tech-card fade-in">
+                    <h3>Durability</h3>
+                    <p>Maintains 95% effectiveness after 50 washes. Replace recommended after 6 months of daily use.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -839,11 +819,25 @@
     <section id="testimonials" class="testimonials">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">Trusted by Thousands</h2>
-            <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto;">Real stories from people who reclaimed their social confidence.</p>
+            <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto;">
+                Real stories from people who reclaimed their social confidence.
+            </p>
             <div class="testimonial-grid">
-                <div class="testimonial-card fade-in"><p class="testimonial-text">"I'm a high school teacher. Classroom presentations were a nightmare until I found QuietButt. Now I can focus on teaching, not worrying. Life-changing."</p><p class="testimonial-author">Sarah M.</p><p class="testimonial-title">High School Teacher</p></div>
-                <div class="testimonial-card fade-in"><p class="testimonial-text">"Board meetings used to trigger anxiety attacks. Three months with QuietButt and I actually look forward to client presentations. Worth every penny."</p><p class="testimonial-author">James R.</p><p class="testimonial-title">Marketing Director</p></div>
-                <div class="testimonial-card fade-in"><p class="testimonial-text">"Dating was impossible for me. First dates meant constant fear. My girlfriend of 6 months has no idea I wear them. That's the point."</p><p class="testimonial-author">Alex T.</p><p class="testimonial-title">Software Engineer</p></div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"I'm a high school teacher. Classroom presentations were a nightmare until I found QuietButt. Now I can focus on teaching, not worrying. Life-changing."</p>
+                    <p class="testimonial-author">Sarah M.</p>
+                    <p class="testimonial-title">High School Teacher</p>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"Board meetings used to trigger anxiety attacks. Three months with QuietButt and I actually look forward to client presentations. Worth every penny."</p>
+                    <p class="testimonial-author">James R.</p>
+                    <p class="testimonial-title">Marketing Director</p>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"Dating was impossible for me. First dates meant constant fear. My girlfriend of 6 months has no idea I wear them. That's the point."</p>
+                    <p class="testimonial-author">Alex T.</p>
+                    <p class="testimonial-title">Software Engineer</p>
+                </div>
             </div>
         </div>
     </section>
@@ -851,16 +845,58 @@
     <section id="faq" class="faq">
         <div class="container">
             <h2 class="h2 fade-in" style="text-align: center;">Frequently Asked Questions</h2>
-            <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">Everything you need to know about QuietButt™. Click on a question to expand.</p>
+            <p class="body-large fade-in" style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
+                Everything you need to know about QuietButt™. Click on a question to expand the answer.
+            </p>
             <div class="faq-grid">
-                <div class="faq-item fade-in"><div class="faq-question">How does it work?</div><div class="faq-answer"><div class="faq-answer-inner">Three-layer technology: outer cotton for comfort, middle acoustic-diffusion layer disperses sound waves, inner activated carbon layer neutralizes odour instantly upon release.</div></div></div>
-                <div class="faq-item fade-in"><div class="faq-question">Is it noticeable?</div><div class="faq-answer"><div class="faq-answer-inner">No. QuietButt™ is designed to be indistinguishable from regular underwear. Same silhouette, same comfort, zero visible indicators.</div></div></div>
-                <div class="faq-item fade-in"><div class="faq-question">How do I wash it?</div><div class="faq-answer"><div class="faq-answer-inner">Machine wash cold with like colors. Air dry only. Do not bleach or iron. Effectiveness maintained for 50+ washes.</div></div></div>
-                <div class="faq-item fade-in"><div class="faq-question">How long do filters last?</div><div class="faq-answer"><div class="faq-answer-inner">Each odour-neutralizing cartridge lasts approximately 30 days of daily use. Replacement 3-packs available for €9.99.</div></div></div>
-                <div class="faq-item fade-in"><div class="faq-question">Sizing guide?</div><div class="faq-answer"><div class="faq-answer-inner">XS (28-30), S (32-34), M (36-38), L (40-42), XL (44-46), XXL (48-50). Fit true to size.</div></div></div>
-                <div class="faq-item fade-in"><div class="faq-question">Return policy?</div><div class="faq-answer"><div class="faq-answer-inner">30-day money-back guarantee. Unused items in original packaging qualify for full refund. No questions asked.</div></div></div>
-                <div class="faq-item fade-in"><div class="faq-question">Shipping?</div><div class="faq-answer"><div class="faq-answer-inner">Free standard shipping (5-7 business days) on all orders. Express shipping (2-3 days) available for €7.99.</div></div></div>
-                <div class="faq-item fade-in"><div class="faq-question">Is it discreet?</div><div class="faq-answer"><div class="faq-answer-inner">Yes. Orders ship in plain, unmarked packaging with no branding or product description visible externally.</div></div></div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">How does it work?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Three-layer technology: outer cotton for comfort, middle acoustic-diffusion layer disperses sound waves, inner activated carbon layer neutralizes odour instantly upon release.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Is it noticeable?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">No. QuietButt™ is designed to be indistinguishable from regular underwear. Same silhouette, same comfort, zero visible indicators.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">How do I wash it?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Machine wash cold with like colors. Air dry only. Do not bleach or iron. Effectiveness maintained for 50+ washes.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">How long do filters last?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Each odour-neutralizing cartridge lasts approximately 30 days of daily use. Replacement 3-packs available for €9.99.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Sizing guide?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">XS (28-30), S (32-34), M (36-38), L (40-42), XL (44-46), XXL (48-50). Fit true to size.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Return policy?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">30-day money-back guarantee. Unused items in original packaging qualify for full refund. No questions asked.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Shipping?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Free standard shipping (5-7 business days) on all orders. Express shipping (2-3 days) available for €7.99.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Is it discreet?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Yes. Orders ship in plain, unmarked packaging with no branding or product description visible externally.</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -868,23 +904,63 @@
     <section id="purchase" class="cta">
         <div class="container">
             <h2 class="cta-title fade-in">Reclaim Your Social Freedom</h2>
-            <p class="cta-subtitle fade-in">Join 10,000+ customers who have eliminated social anxiety from their daily lives. Experience confidence in every situation.</p>
-            <a href="#" class="purchase-button white-version fade-in" onclick="alert('QuietButt™ — Secure checkout. This is a demonstration page for educational purposes.'); return false;">Purchase QuietButt™ — €29.99</a>
-            <p class="body-small fade-in" style="margin-top: 2rem; color: var(--gray-400);">30-day guarantee • Free shipping • Discreet packaging</p>
+            <p class="cta-subtitle fade-in">
+                Join 10,000+ customers who have eliminated social anxiety from their daily lives. 
+                Experience confidence in every situation.
+            </p>
+            <a href="#" class="purchase-button white-version fade-in" onclick="alert('Thank you for your interest in QuietButt™. This is a demo version.'); return false;">Purchase QuietButt™ — €29.99</a>
+            <p class="body-small fade-in" style="margin-top: 2rem; color: var(--gray-400);">
+                30-day money-back guarantee • Free shipping • Discreet packaging
+            </p>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-column"><div class="footer-logo"><img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab"><span class="footer-logo-text">Error Lab</span></div><ul class="footer-links"><li><a href="#">Our Mission</a></li><li><a href="#">Technology</a></li><li><a href="#">Research</a></li><li><a href="#">Careers</a></li></ul></div>
-                <div class="footer-column"><h4>Product</h4><ul class="footer-links"><li><a href="#">QuietButt™</a></li><li><a href="#">Replacement Filters</a></li><li><a href="#">How It Works</a></li><li><a href="#">FAQs</a></li></ul></div>
-                <div class="footer-column"><h4>Support</h4><ul class="footer-links"><li><a href="#">Contact</a></li><li><a href="#">Shipping Policy</a></li><li><a href="#">Returns & Refunds</a></li><li><a href="#">Sizing Guide</a></li></ul></div>
-                <div class="footer-column"><h4>Legal</h4><ul class="footer-links"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Warranty</a></li><li><a href="#">Accessibility</a></li></ul></div>
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-logo.png" alt="Error Lab">
+                        <span class="footer-logo-text">Error Lab</span>
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">QuietButt™</a></li>
+                        <li><a href="#">Replacement Filters</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Sizing Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2024 Error Lab. All rights reserved. QuietButt™ is a trademark of Error Lab.</p>
-                <p style="margin-top: 1rem;">Designed for social confidence • Engineered for discretion</p>
+                <p style="margin-top: 1rem;">Designed for social confidence. Engineered for discretion. Made with integrity.</p>
                 <p style="margin-top: 2rem; font-size: 1rem; color: var(--gray-400);">⚠️ This is a demonstration page for educational purposes. Not a real product.</p>
             </div>
         </div>
@@ -895,7 +971,9 @@
             const fadeElements = document.querySelectorAll('.fade-in');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) entry.target.classList.add('visible');
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
                 });
             }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
             fadeElements.forEach(element => observer.observe(element));
@@ -906,7 +984,9 @@
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
                     const targetElement = document.querySelector(targetId);
-                    if (targetElement) window.scrollTo({ top: targetElement.offsetTop - 100, behavior: 'smooth' });
+                    if (targetElement) {
+                        window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
+                    }
                 });
             });
             
@@ -915,15 +995,19 @@
                 button.addEventListener('click', function(e) {
                     e.preventDefault();
                     this.style.transform = 'scale(0.95)';
-                    setTimeout(() => { this.style.transform = ''; }, 200);
-                    alert('QuietButt™ — Secure checkout.\n\nThis is a demonstration page for educational purposes.\n\nIn production, this would redirect to a secure checkout.');
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                    alert('Thank you for your interest in QuietButt™.\n\nThis is a demonstration page for educational purposes.\n\nIn a production environment, this would redirect to a secure checkout.');
                 });
             });
             
             const faqItems = document.querySelectorAll('.faq-item');
             faqItems.forEach(item => {
                 const question = item.querySelector('.faq-question');
-                if(question) question.addEventListener('click', () => item.classList.toggle('active'));
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
             });
         });
     </script>
