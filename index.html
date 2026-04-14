@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Error Lab | QuietButt™ - Easter Special | Social Confidence Through Innovation</title>
-    <meta name="description" content="QuietButt™: Revolutionary fart-silencing underwear using acoustic-diffusion technology. Easter Special Offer - Limited time.">
+    <title>QuietButt™ | 社交自信通过创新科技 | Error Lab</title>
+    <meta name="description" content="QuietButt™：采用声学扩散技术的消音内裤，消除社交焦虑。专业、可靠、日常适用。">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N70V0RJGEX"></script>
@@ -29,17 +29,9 @@
             --gray-700: #404040;
             --gray-800: #262626;
             --gray-900: #171717;
-            /* Easter accent colors - subtle additions */
-            --easter-pink: #f9e6f0;
-            --easter-blue: #e6f0fa;
-            --easter-green: #e8f5e9;
-            --easter-pink-border: #f8d0e0;
-            --easter-blue-border: #cce4f5;
-            --easter-green-border: #c8e6c9;
-            /* Easter button gradient */
-            --easter-gradient-start: #f8b0c0;
-            --easter-gradient-mid: #f5c6a0;
-            --easter-gradient-end: #a8e6cf;
+            /* 中性交互色 */
+            --hover-bg-light: #f8f8f8;
+            --hover-border-light: #e0e0e0;
         }
         
         * {
@@ -63,49 +55,10 @@
             -moz-osx-font-smoothing: grayscale;
         }
         
-        /* Easter Top Banner - Fixed */
-        .easter-banner {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(135deg, #f9c5d1 0%, #b8e1fc 50%, #c8e6c9 100%);
-            color: #2c3e2f;
-            text-align: center;
-            padding: 1rem;
-            font-size: 1.4rem;
-            font-weight: 600;
-            z-index: 1001;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            letter-spacing: 0.5px;
-            backdrop-filter: blur(2px);
-            font-family: inherit;
-        }
-        
-        .easter-banner span {
-            display: inline-block;
-            animation: softPulse 1.5s ease-in-out infinite;
-        }
-        
-        .easter-banner::before {
-            content: "🐣 ";
-            font-size: 1.6rem;
-        }
-        
-        .easter-banner::after {
-            content: " 🐰🥚";
-            font-size: 1.6rem;
-        }
-        
-        @keyframes softPulse {
-            0%, 100% { opacity: 1; transform: scale(1);}
-            50% { opacity: 0.9; transform: scale(1.02);}
-        }
-        
-        /* 调整导航栏位置，给banner留出空间 */
+        /* 导航栏 - 固定在顶部 */
         .nav {
             position: fixed;
-            top: 52px;
+            top: 0;
             left: 0;
             right: 0;
             background: var(--white);
@@ -114,10 +67,10 @@
             padding: 2rem 0;
         }
         
-        /* 调整hero部分顶部内边距，适应双fixed元素 */
+        /* 调整hero顶部内边距，适应固定导航栏 */
         .hero {
             position: relative;
-            padding: 24rem 0 10rem;
+            padding: 16rem 0 10rem;
             text-align: center;
             background-color: var(--gray-900);
             background-image: url('https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-banner.png');
@@ -262,74 +215,6 @@
             box-shadow: 0 12px 28px rgba(0,0,0,0.08);
         }
         
-        /* Easter Ribbon - 丝带形状标签 (完整保留，无粉色点) */
-        .easter-ribbon {
-            position: absolute;
-            top: -12px;
-            left: -12px;
-            z-index: 10;
-            width: 140px;
-            overflow: hidden;
-            height: 140px;
-            pointer-events: none; /* 让丝带不影响点击图片，纯装饰 */
-        }
-        
-        .easter-ribbon::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-top: 12px solid #d47a9e;
-            border-left: 12px solid transparent;
-            z-index: 11;
-        }
-        
-        .easter-ribbon::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 0;
-            height: 0;
-            border-bottom: 12px solid #d47a9e;
-            border-right: 12px solid transparent;
-            z-index: 11;
-        }
-        
-        .ribbon-content {
-            position: absolute;
-            top: 20px;
-            left: -28px;
-            width: 170px;
-            padding: 8px 0;
-            background: linear-gradient(135deg, #f9c5d1, #f8b0c0, #f5c6a0);
-            color: #4a2a2a;
-            text-align: center;
-            font-size: 1.2rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            transform: rotate(-45deg);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            z-index: 12;
-            border: 1px solid rgba(255,255,255,0.5);
-            backdrop-filter: blur(2px);
-        }
-        
-        .ribbon-content span {
-            display: inline-block;
-            margin: 0 2px;
-        }
-        
-        .ribbon-content::before,
-        .ribbon-content::after {
-            content: "🐣";
-            font-size: 1rem;
-            margin: 0 4px;
-        }
-        
         .problem {
             padding: 10rem 0;
             background: var(--white);
@@ -358,17 +243,9 @@
             border-radius: 16px;
         }
         
-        .problem-card:nth-child(1):hover {
-            background: var(--easter-pink);
-            box-shadow: 0 4px 12px rgba(249, 198, 209, 0.2);
-        }
-        .problem-card:nth-child(2):hover {
-            background: var(--easter-blue);
-            box-shadow: 0 4px 12px rgba(184, 225, 252, 0.2);
-        }
-        .problem-card:nth-child(3):hover {
-            background: var(--easter-green);
-            box-shadow: 0 4px 12px rgba(200, 230, 201, 0.2);
+        .problem-card:hover {
+            background: var(--hover-bg-light);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
         
         .problem-image {
@@ -407,17 +284,8 @@
         }
         
         .feature:hover {
-            background: var(--easter-pink);
+            background: var(--hover-bg-light);
             transform: translateY(-4px);
-        }
-        .feature:nth-child(2):hover {
-            background: var(--easter-blue);
-        }
-        .feature:nth-child(3):hover {
-            background: var(--easter-green);
-        }
-        .feature:nth-child(4):hover {
-            background: #fef3e6;
         }
         
         .feature-image {
@@ -454,34 +322,11 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
         }
         
-        .tech-card:nth-child(1):hover {
-            border-color: var(--easter-pink-border);
-            background: var(--easter-pink);
-        }
-        .tech-card:nth-child(2):hover {
-            border-color: var(--easter-blue-border);
-            background: var(--easter-blue);
-        }
-        .tech-card:nth-child(3):hover {
-            border-color: var(--easter-green-border);
-            background: var(--easter-green);
-        }
-        .tech-card:nth-child(4):hover {
-            border-color: var(--easter-pink-border);
-            background: #fef3e6;
-        }
-        .tech-card:nth-child(5):hover {
-            border-color: var(--easter-blue-border);
-            background: #e0f2fe;
-        }
-        .tech-card:nth-child(6):hover {
-            border-color: var(--easter-green-border);
-            background: #f1f8e9;
-        }
-        
         .tech-card:hover {
             transform: translateY(-6px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            background: var(--white);
+            border-color: var(--gray-300);
         }
         
         .tech-card h3 {
@@ -523,16 +368,9 @@
         }
         
         .testimonial-card:hover {
-            border-color: var(--easter-pink-border);
-            background: linear-gradient(145deg, var(--white), var(--easter-pink));
-        }
-        .testimonial-card:nth-child(2):hover {
-            border-color: var(--easter-blue-border);
-            background: linear-gradient(145deg, var(--white), var(--easter-blue));
-        }
-        .testimonial-card:nth-child(3):hover {
-            border-color: var(--easter-green-border);
-            background: linear-gradient(145deg, var(--white), var(--easter-green));
+            border-color: var(--gray-300);
+            background: var(--hover-bg-light);
+            transform: translateY(-2px);
         }
         
         .testimonial-text {
@@ -632,24 +470,6 @@
             overflow: hidden;
         }
         
-        .cta::before {
-            content: "🐣🐰🥚🌸";
-            position: absolute;
-            top: 10px;
-            left: 0;
-            right: 0;
-            font-size: 2rem;
-            opacity: 0.1;
-            pointer-events: none;
-            white-space: nowrap;
-            animation: floatEaster 20s linear infinite;
-        }
-        
-        @keyframes floatEaster {
-            0% { transform: translateX(-10%); opacity: 0.08; }
-            100% { transform: translateX(10%); opacity: 0.15; }
-        }
-        
         .cta-title {
             font-size: 4.8rem;
             margin-bottom: 2rem;
@@ -661,6 +481,86 @@
             color: var(--gray-300);
             max-width: 600px;
             margin: 0 auto 4rem;
+        }
+        
+        /* 中性专业按钮样式 */
+        .purchase-button {
+            display: inline-block;
+            padding: 1.6rem 4rem;
+            background: #1a1a1a;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border: 2px solid var(--gray-700);
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .purchase-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .purchase-button:hover {
+            background: #333333;
+            border-color: var(--gray-500);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            color: var(--white);
+        }
+
+        .purchase-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .purchase-button:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: all 0.1s;
+        }
+
+        .purchase-button.white-version {
+            background: var(--white);
+            color: var(--black);
+            border: 2px solid var(--gray-400);
+        }
+
+        .purchase-button.white-version:hover {
+            background: var(--gray-100);
+            border-color: var(--gray-600);
+            color: var(--black);
+        }
+
+        .purchase-button.white-version::before {
+            background: rgba(0,0,0,0.05);
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .guarantee-text {
+            margin-top: 1.5rem;
+            font-size: 1.3rem;
+            color: var(--gray-500);
+            letter-spacing: 0.05em;
         }
         
         .footer {
@@ -729,96 +629,10 @@
             color: var(--gray-600);
             font-size: 1.2rem;
         }
-
-        /* Easter主题按钮 - 直接应用渐变色彩 */
-        .purchase-button {
-            display: inline-block;
-            padding: 1.6rem 4rem;
-            background: linear-gradient(135deg, #f9c5d1, #f8b0c0, #f5c6a0, #a8e6cf);
-            color: #4a2a2a;
-            text-decoration: none;
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            border: none;
-            border-radius: 50px;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(248, 176, 192, 0.4);
-        }
-
-        .purchase-button::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
-            transform: translate(-50%, -50%);
-            transition: width 0.6s, height 0.6s;
-        }
-
-        .purchase-button:hover {
-            background: linear-gradient(135deg, #f8b0c0, #f5c6a0, #a8e6cf, #f9c5d1);
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 10px 25px rgba(248, 176, 192, 0.5);
-            color: #2c3e2f;
-        }
-
-        .purchase-button:hover::before {
-            width: 300px;
-            height: 300px;
-        }
-
-        .purchase-button:active {
-            transform: translateY(0) scale(0.98);
-            box-shadow: 0 2px 8px rgba(248, 176, 192, 0.3);
-            transition: all 0.1s;
-        }
-
-        .purchase-button.white-version {
-            background: linear-gradient(135deg, #f9c5d1, #f8b0c0, #f5c6a0, #a8e6cf);
-            color: #4a2a2a;
-            border: none;
-        }
-
-        .purchase-button.white-version:hover {
-            background: linear-gradient(135deg, #f8b0c0, #f5c6a0, #a8e6cf, #f9c5d1);
-            color: #2c3e2f;
-            border: none;
-        }
-
-        .purchase-button.white-version::before {
-            background: rgba(255, 255, 255, 0.3);
-        }
-        
-        .button-container {
-            text-align: center;
-            margin-top: 5rem;
-        }
-
-        .guarantee-text {
-            margin-top: 1.5rem;
-            font-size: 1.3rem;
-            color: var(--gray-500);
-            letter-spacing: 0.05em;
-        }
         
         @media (max-width: 768px) {
-            .easter-banner {
-                font-size: 1rem;
-                padding: 0.8rem;
-            }
-            .nav {
-                top: 45px;
-            }
             .hero {
-                padding: 20rem 0 6rem;
+                padding: 14rem 0 6rem;
             }
             .h1, .hero-title {
                 font-size: 3.6rem;
@@ -866,42 +680,14 @@
             .footer-logo img {
                 height: 72px;
             }
-            .easter-ribbon {
-                width: 110px;
-                height: 110px;
-            }
-            .ribbon-content {
-                font-size: 1rem;
-                width: 150px;
-                left: -30px;
-                top: 15px;
-            }
         }
 
         @media (max-width: 480px) {
             .tech-grid {
                 grid-template-columns: 1fr;
             }
-            .easter-banner {
-                font-size: 0.9rem;
-                padding: 0.6rem;
-            }
-            .nav {
-                top: 40px;
-            }
             .hero {
-                padding: 18rem 0 6rem;
-            }
-            .easter-ribbon {
-                width: 90px;
-                height: 90px;
-            }
-            .ribbon-content {
-                font-size: 0.85rem;
-                width: 130px;
-                left: -28px;
-                top: 12px;
-                padding: 6px 0;
+                padding: 12rem 0 6rem;
             }
         }
         
@@ -918,11 +704,6 @@
     </style>
 </head>
 <body>
-    <!-- Easter Fixed Banner -->
-    <div class="easter-banner">
-        <span>🐣 FIRST 50 SIGN UP WIN QUiETBUTT™ FOR FREE+ EASTER EGG SURPRISE! 🥚</span>
-    </div>
-    
     <nav class="nav">
         <div class="container nav-container">
             <a href="#" class="nav-logo">
@@ -965,21 +746,14 @@
                     </div>
                 </div>
                 <div class="product-image fade-in">
-                    <!-- Easter Ribbon ONLY: 完整的丝带，无任何粉色点装饰 -->
-                    <div class="easter-ribbon">
-                        <div class="ribbon-content">
-                            <span>🐣 EASTER</span><br>
-                            <span>SPECIAL</span>
-                        </div>
-                    </div>
                     <img src="https://raw.githubusercontent.com/errorlabs101-del/quite-butt/main/errorlab-product.png" alt="QuietButt Product Structure">
                 </div>
             </div>
             
-            <!-- Enhanced Purchase Button with Easter Theme -->
+            <!-- 标准购买按钮 -->
             <div class="button-container fade-in">
-                <a href="#" class="purchase-button" onclick="alert('🐣 Easter Special Offer! First 50 orders win a FREE QuietButt™! 🎁 This is a demo version.'); return false;">🐰 Easter Special Offer — €29.99 🥚</a>
-                <p class="guarantee-text">🎁 First 50 Sign Up get a FREE QuietButt™ • 30-day guarantee • Free shipping • Discreet packaging 🐣</p>
+                <a href="#" class="purchase-button" onclick="alert('QuietButt™ — Secure checkout. This is a demonstration page for educational purposes.'); return false;">Purchase QuietButt™ — €29.99</a>
+                <p class="guarantee-text">30-day guarantee • Free shipping • Discreet packaging</p>
             </div>
             
         </div>
@@ -1050,7 +824,7 @@
     <section id="technology" class="technology">
         <div class="container">
             <h2 class="h2 fade-in">Technical Specifications</h2>
-            <p class="body-large fade-in">Engineered for discretion, comfort, and effectiveness. Hover over cards for Easter magic.</p>
+            <p class="body-large fade-in">Engineered for discretion, comfort, and effectiveness.</p>
             <div class="tech-grid">
                 <div class="tech-card fade-in"><h3>Fabric Composition</h3><p>Three-layer construction: Outer cotton blend (95% cotton, 5% spandex), acoustic-diffusion polyester middle layer, odour-neutralizing activated carbon inner lining.</p></div>
                 <div class="tech-card fade-in"><h3>Sound Reduction</h3><p>90%+ reduction in audible frequency range (100-500Hz). Independently laboratory tested and verified using ISO 3744 standards.</p></div>
@@ -1095,8 +869,8 @@
         <div class="container">
             <h2 class="cta-title fade-in">Reclaim Your Social Freedom</h2>
             <p class="cta-subtitle fade-in">Join 10,000+ customers who have eliminated social anxiety from their daily lives. Experience confidence in every situation.</p>
-            <a href="#" class="purchase-button white-version fade-in" onclick="alert('🐣 Easter Special Offer! First 50 orders win a FREE QuietButt™! 🎁 Demo version.'); return false;">🐰 Easter Special Offer — €29.99 🥚</a>
-            <p class="body-small fade-in" style="margin-top: 2rem; color: var(--gray-400);">🐣 First 50 Sign Up get a FREE QuietButt™ • 30-day guarantee • Free shipping • Discreet packaging 🌸</p>
+            <a href="#" class="purchase-button white-version fade-in" onclick="alert('QuietButt™ — Secure checkout. This is a demonstration page for educational purposes.'); return false;">Purchase QuietButt™ — €29.99</a>
+            <p class="body-small fade-in" style="margin-top: 2rem; color: var(--gray-400);">30-day guarantee • Free shipping • Discreet packaging</p>
         </div>
     </section>
 
@@ -1108,7 +882,11 @@
                 <div class="footer-column"><h4>Support</h4><ul class="footer-links"><li><a href="#">Contact</a></li><li><a href="#">Shipping Policy</a></li><li><a href="#">Returns & Refunds</a></li><li><a href="#">Sizing Guide</a></li></ul></div>
                 <div class="footer-column"><h4>Legal</h4><ul class="footer-links"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Warranty</a></li><li><a href="#">Accessibility</a></li></ul></div>
             </div>
-            <div class="footer-bottom"><p>© 2024 Error Lab. All rights reserved. QuietButt™ is a trademark of Error Lab.</p><p style="margin-top: 1rem;">🌸 Easter Special Edition • Designed for social confidence • Engineered for discretion 🌸</p><p style="margin-top: 2rem; font-size: 1rem; color: var(--gray-400);">⚠️ This is a demonstration page for educational purposes. Not a real product.</p></div>
+            <div class="footer-bottom">
+                <p>© 2024 Error Lab. All rights reserved. QuietButt™ is a trademark of Error Lab.</p>
+                <p style="margin-top: 1rem;">Designed for social confidence • Engineered for discretion</p>
+                <p style="margin-top: 2rem; font-size: 1rem; color: var(--gray-400);">⚠️ This is a demonstration page for educational purposes. Not a real product.</p>
+            </div>
         </div>
     </footer>
 
@@ -1128,7 +906,7 @@
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
                     const targetElement = document.querySelector(targetId);
-                    if (targetElement) window.scrollTo({ top: targetElement.offsetTop - 130, behavior: 'smooth' });
+                    if (targetElement) window.scrollTo({ top: targetElement.offsetTop - 100, behavior: 'smooth' });
                 });
             });
             
@@ -1138,7 +916,7 @@
                     e.preventDefault();
                     this.style.transform = 'scale(0.95)';
                     setTimeout(() => { this.style.transform = ''; }, 200);
-                    alert('🐣 Easter Special Offer!\n\nFirst 50 Sign Up win a FREE QuietButt™!\n\nThis is a demonstration page for educational purposes.\n\nIn production, this would redirect to a secure checkout.');
+                    alert('QuietButt™ — Secure checkout.\n\nThis is a demonstration page for educational purposes.\n\nIn production, this would redirect to a secure checkout.');
                 });
             });
             
